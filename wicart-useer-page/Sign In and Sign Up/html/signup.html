@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiCart home page</title>
+    <link rel="stylesheet" href="/wicart-useer-page/Sign In and Sign Up/css/signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="/images/Vector.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <img src="/wicart-useer-page/Sign In and Sign Up/images/WI-logo.png">
+<h1 style="margin-left: 40px; font-weight: 600;
+font-size: 30px;
+line-height: 53px; font-family: 'Poppins', sans-serif;">For The <br><span style="color: blue;">Ecommerce</span> You <br>Don't Know yet.</h1>
+    </div>   
+     <div class="header">   
+            <div class="crlcl">
+<div class="circle">
+<div class="inner-circle">
+<div class="back-img">
+</div>
+</div>
+</div>
+</div>
+    <div class="loginpage">
+    <div class="button-box">
+    <div id="btn"></div>
+    <button type="button" class="toggle-btn" onclick="login()"><span style="font-size:15px; color:rgb(0, 0, 0); font-style: normal;
+        font-weight: 400;
+        font-size: 13.8577px;
+        line-height: 21px; font-family: 'Poppins', sans-serif;"><a href="index.html" style="text-decoration: none; color:rgb(0, 0, 0);"><span><h2>Signin</h2></span></span></button>
+    <button type="button" class="toggle-btn" onclick="register()"><span style="font-weight:10000 ; color:#fff;"><a href="" style="text-decoration:none; 
+        color:rgb(255, 255, 255);font-style: normal;
+        font-weight: 400;
+        font-size: 13.8577px;
+        line-height: 21px; font-family: 'Poppins', sans-serif; position:absolute; " ><span><h2>Signup</h2></span></a></button>
+</div>
+    <div class="wlcm">
+    <p>Create account to have best expirience with wicart.</p>
+    <form action="#" id="login">
+        <div class="field">
+        <div class="field input-field">
+            <input type="email" placeholder="Full name" class="input">
+        </div>
+        <div class="field input-field" style="margin-top: 50px;">
+            <input type="email" placeholder="Enter your Email here" class="input" style="margin-top:-10px;">
+        </div>
+        <div class="field input-field" style="margin-top: 50px;">
+            <input type="password" placeholder="Password" class="password" style="margin-top:-10px;"">
+        </div>
+    </div>
+    <input type="checkbox" name="checkbox" id="checkbox"><span style="position: absolute; top:320px;  left:-10px; font-size:12px; color:rgb(158, 158, 158); "> agree to terms & conditions</span>
+</form>
+
+    <div class="sign-in">
+    <a href="/wicart-useer-page/Sign In and Sign Up/html/index.html"><h3>Sign up</h3></a>
+    </div>
+    <div class="google-rgst">
+        <a href="#"><img src="/wicart-useer-page/Sign In and Sign Up/images/google.png" alt=""><h3>Register with Google</h3></a>
+        <p style="color: rgb(122, 122, 122); font-size:10px; position:relative; margin-left:230px; margin-top: -210px; text-align:center;">Or</p>
+
+    </div>
+    </div>
+    </div>
+    <div class="man-image">
+    <div class="all">
+    <div class="skill">
+        <div class="outer">
+        <div class="inner">
+        <div id="number">
+            60%
+        </div>
+        <div class="bonus" style="color:#fff;
+        position:absolute; left:20px; font-size:13px;">
+        <h4 style="text-align:center;">bonus package for new users</h4>
+        </div>
+        </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="blue" />
+                  <stop offset="100%" stop-color="blue" />
+               </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
+    </div>
+    </div>
+  <img src="/wicart-useer-page/Sign In and Sign Up/images/black-businessman-happy-expression-removebg-preview 1.png" alt="">
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+let number = document.getElementById("number")
+let counter = 0;
+
+setInterval(() => {
+    if(counter == 65){
+        clearInterval();
+    }
+    else{
+        counter += 1;
+        number.innerHTML = counter + "%";
+    }
+}, 22);
+
+
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>

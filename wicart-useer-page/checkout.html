@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart/cart.css">
+</head>
+<body class="checkout-body">
+<div class="payment-frunt">
+    <div class="payment-type">
+        <h1>Payment Method</h1>
+        <div class="pay-row">
+        
+          <div class="pay-stile radio">
+              <label for="card">
+              <input type="radio" name="inuse" id="card">
+              <img src="png/CARD ICON.png" alt="" >
+              </label>
+          </div>
+          <div class="pay-stile radio" >
+            <label for="paypal">
+            <input type="radio" id="paypal" name="inuse">
+              <img src="png/PAYPAL.png" alt="">
+            </label>
+          </div>
+          <div class="pay-stile radio">
+            <label for="btc">
+            <input type="radio" id="btc" name="inuse">
+              <img src="png/btc.png" alt="">
+            </label>
+          </div>
+        
+        </div>
+        <fieldset>
+            <legend>Payment details</legend>
+            <form action="">
+                    <input type="text" placeholder="Enter card name">
+                    <input type="text" placeholder=Card number" >
+                    <img src="png/Visa_Inc._logo 2.png" alt="" class="pay-type-img">
+                    <img src="png/pay-type.png" alt="" class="select-pay">
+                    <div class="pay-row">
+                        <input type="text" placeholder="mm/yy">
+                        <input type="text" placeholder="cvv">
+                    </div>
+            </form>
+            <p>By clicking *confirm payment*
+                i agree to company terms ot services
+            </p>
+        </fieldset>
+        <div class="pay-row">
+            <a href="cart/cart.html"> <button class="back">Back</button></a>
+            <button class="proceed-alart" id="proceed-alart">Proceed</button>
+        </div>
+    </div>
+    <div class="sum-totale final new-sum-totale">
+        <h1 class="new">Summary</h1>
+        <span class="spam"><h4>Subtotal</h4><span class="subtotale final">#6,000</span></span>
+        <span class="spam"><h4>Discount</h4><span class="discount final">#0</span></span>
+        <span class="spam"><h4>Delivery-Fee</h4><span class="deliver final">#0</span></span>
+        <span class="spam"><h2>Total</h2><span class="total final">#6,000</span></span>
+    </div>
+</div>
+<div class="alart show" id="alart">
+    <h3>Are you sure you want to proceed withe the payment </h3>
+    <div class="btn">
+        <button class="proceed-pay" id="">proceed</button>
+        <button class="cancle-pay" id="cancle">Cancel</button>
+    </div>
+</div>
+<script src="/wicart-useer-page/cart.js">
+</script>
+<script src="/wicart-useer-page/cart-event.js"></script>
+</body>
+</html>

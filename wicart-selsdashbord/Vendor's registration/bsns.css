@@ -1,0 +1,337 @@
+body{
+    background-color: #E7E9FF;
+    height: 100vh;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 15px 35px 15px rgba(207, 207, 207, 0.04), 9px 20px 13px rgba(207, 207, 207, 0.13), 4px 9px 10px rgba(207, 207, 207, 0.21), 1px 2px 5px rgba(207, 207, 207, 0.25), 0px 0px 0px rgba(207, 207, 207, 0.25);
+border-radius: 10px;
+position: relative;
+}
+.items{
+position: absolute;
+top: 40px;
+left: 60px;
+box-sizing: border-box;
+width: 124px;
+height: 104px;
+border-radius: 10px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.items img{
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+.items p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+    position: absolute;
+width: 105px;
+height: 17px;
+left: 20px;
+top: 60px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #1C00FF;
+}
+.items1{
+position: absolute;
+top: 40px;
+left: 280px;
+box-sizing: border-box;
+width: 124px;
+height: 104px;
+background: #F2F3FF;
+box-shadow: 15px 35px 15px rgba(207, 207, 207, 0.04), 9px 20px 13px rgba(207, 207, 207, 0.13), 4px 9px 10px rgba(207, 207, 207, 0.21), 1px 2px 5px rgba(207, 207, 207, 0.25), 0px 0px 0px rgba(207, 207, 207, 0.25);
+border-radius: 10px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.items1 img{
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
+.items1 p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+    position: absolute;
+width: 105px;
+height: 17px;
+left: 10px;
+top: 52px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+text-align: center;
+line-height: 17px;
+color: #1C00FF;
+}
+.items2{
+position: absolute;
+top: 40px;
+left: 500px;
+box-sizing: border-box;
+width: 124px;
+height: 104px;
+background: #fff;
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.items2 img{
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
+.items2 p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+    position: absolute;
+width: 105px;
+height: 17px;
+left: 10px;
+top: 60px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #1C00FF;
+text-align: center;
+}
+
+/*AdminName*/
+#AdminName{
+    width: 32%;
+    position: absolute;
+    top: 180px;
+    left: 40px;
+    border-radius: 5px;
+    border: 1px solid #999999; 
+    padding: 10px;
+    background-color: transparent;
+    padding-left: 35px;
+    outline: none;  
+}
+.feild img{
+    width: 13px;
+    position: absolute;
+    top: 190px;
+    left: 50px;
+}
+#AdminMail{
+    width: 32%;
+    position: absolute;
+    top: 248px;
+    left: 40px;
+    border-radius: 5px;
+    border: 1px solid #999999; 
+    padding: 10px;
+    background-color: transparent;
+    padding-left: 35px;
+    outline: none; 
+}
+#AdminPhone{
+    width: 32%;
+    position: absolute;
+    top: 313px;
+    left: 40px;
+    border-radius: 5px;
+    border: 1px solid #999999; 
+    padding: 10px;
+    background-color: transparent;
+    padding-left: 35px;
+    outline: none; 
+}
+#AdminBrand{
+    width: 32%;
+    position: absolute;
+    top: 380px;
+    left: 40px;
+    border-radius: 5px;
+    border: 1px solid #999999; 
+    padding: 10px;
+    background-color: transparent;
+    padding-left: 35px;
+    outline: none; 
+}
+#AdminAdress{
+    width: 32%;
+    position: absolute;
+    top: 180px;
+    left: 400px;
+    border-radius: 5px;
+    border: 1px solid #999999; 
+    padding: 10px;
+    background-color: transparent;
+    padding-left: 35px;
+    outline: none; 
+}
+#AdminState{
+position: absolute;
+top: 248px;
+left: 400px;
+border-radius: 5px;
+border: 1px solid #999999; 
+width: 12%;
+padding: 10px;
+background-color: transparent;
+padding-left: 35px;
+outline: none; 
+}
+#AdminConfCity{
+width: 12%;
+position: absolute;
+top: 248px;
+left: 540px;
+border-radius: 5px;
+border: 1px solid #999999; 
+padding: 10px;
+background-color: transparent;
+padding-left: 35px;
+outline: none; 
+}
+#AdminWeb{
+position: absolute;
+top: 313px;
+left: 400px;
+border-radius: 5px;
+border: 1px solid #999999; 
+padding: 10px;
+background-color: transparent;
+padding-left: 35px; 
+width: 32%;
+outline: none;
+}
+#AdminLogo{
+    width: 32%;
+    position: absolute;
+top: 380px;
+left: 400px;
+border-radius: 5px;
+border: 1px solid #999999; 
+padding: 10px;
+background-color: transparent;
+padding-left: 35px; 
+outline: none;
+}
+.globe{
+    position: absolute;
+    top: 324px;
+    right: 275px;
+    width: 13px;
+}
+.mail{
+    width: 13px;
+    position: absolute;
+    top: 260px;
+    left: 50px;   
+}
+.mail2{
+    width: 13px;
+    position: absolute;
+    top: 325px;
+    left: 50px;   
+}
+.phone{
+    width: 13px;
+    position: absolute;
+    top: 393px;
+    left: 50px; 
+}
+.address{
+    width: 13px;
+    position: absolute;
+    top: 190px;
+    left: 410px;     
+}
+.pass{
+    width: 13px;
+    position: absolute;
+    top: 290px;
+    left: 490px;  
+}
+.pass2{
+    width: 13px;
+    position: absolute;
+    top: 370px;
+    left: 490px;  
+}
+.opt a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+    text-decoration: none;
+    color: #1C00FF;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    border:1px solid blue ;
+    padding-top: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 7px;
+    border-radius: 3px;
+}
+.opt1 button{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    background-color: #1C00FF;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+}
+#Uploadfile{
+    position: absolute;
+    top: 390px;
+    right: -40px;
+    font-style: italic;
+    cursor: pointer;
+}
+.upload img{
+    position: absolute;
+    top: 390px;
+    right: 130px;
+}
+#Uploadfile::-webkit-file-upload-button{
+    visibility: hidden;
+}
