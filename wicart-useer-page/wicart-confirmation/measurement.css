@@ -1,0 +1,145 @@
+body{
+    background: #E5E5E5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    height: 600px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 15px 35px 15px rgba(207, 207, 207, 0.04), 9px 20px 13px rgba(207, 207, 207, 0.13), 4px 9px 10px rgba(207, 207, 207, 0.21), 1px 2px 5px rgba(207, 207, 207, 0.25), 0px 0px 0px rgba(207, 207, 207, 0.25);
+    border-radius: 10px;
+    position:relative;
+}
+.two-cancle img{
+    position: absolute;
+    right: 13px;
+    top: 16px;
+}
+.one-back img{
+    position: absolute;
+    left: 13px;
+    top: 16px;
+}
+.avatar img{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 140px;
+    top: 85px;
+    background: #E7E7E7;
+    border-radius: 500px;
+}
+.flame img{
+    position: absolute;
+    top: 250px;
+    left: 95px;
+}
+.group{
+    position: absolute;
+    top: 330px;
+    left: 45px;
+}
+.camera img{
+position: absolute;
+left: 55%;
+top: 30%;
+}
+.camera h3{
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+position: absolute;
+top: 179px;
+left: 127px;
+}
+button{
+    background-color: blue;
+    padding: 12px 150px;
+    position: absolute;
+    bottom: 50px;
+    left: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500; 
+}
+.three{
+    height: 22px;
+    width: 30px;
+    outline: none;
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 330px;
+    right: 15px;
+    border-radius: 2px;
+}
+.two{
+    height: 22px;
+    width: 30px;
+    outline: none;
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 382px;
+    right: 67px;
+    border-radius: 3px;
+}
+.four{
+    height: 22px;
+    width: 30px;
+    outline: none;
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 433.8px;
+    right: 50px;
+    border-radius: 3px;
+}
+.one{
+    height: 22px;
+    width: 30px;
+    outline: none;
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 330px;
+    left: 100px;
+    border-radius: 2px;
+}
+.five{
+    height: 22px;
+    width: 30px;
+    outline: none;
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 382px;
+    border-radius: 3px;
+    left: 157px;
+}
+.six{
+    height: 22px;
+    width: 30px;
+    outline: none;
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 433px;
+    left: 120px;
+    border-radius: 3px;
+}   
+.cancle a button{
+    text-decoration: none;
+    color: blue;
+    background-color:#ffffff;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    height: 45px;
+    left: 19px;
+    bottom: 3px;
+    font-size: 20px;
+    font-weight: 500; 
+}

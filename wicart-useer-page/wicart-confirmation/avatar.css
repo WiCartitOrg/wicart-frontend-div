@@ -1,0 +1,111 @@
+body{
+    background: #E5E5E5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    height: 600px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 15px 35px 15px rgba(207, 207, 207, 0.04), 9px 20px 13px rgba(207, 207, 207, 0.13), 4px 9px 10px rgba(207, 207, 207, 0.21), 1px 2px 5px rgba(207, 207, 207, 0.25), 0px 0px 0px rgba(207, 207, 207, 0.25);
+    border-radius: 10px;
+    position:relative;
+}
+
+
+.camera h3{
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+position: absolute;
+top: 100px;
+left: 127px;
+}
+.camera p{
+    position: absolute;
+    top: 270px;
+    left: 115px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.two-cancle img{
+    position: absolute;
+    right: 13px;
+    top: 16px;
+}
+.one-back img{
+    position: absolute;
+    left: 13px;
+    top: 16px;
+}
+.camera img{
+    width: 50px;
+    position: absolute;
+    top: 220px;
+    left: 50px;
+    background: #E5E5E5;
+    border-radius: 35px;
+}
+.imag img{
+    position: absolute;
+    top: 220px;
+    left: 120px;
+    background: #E5E5E5;
+    border-radius: 35px;
+    width: 50px;   
+}
+.imag p{
+    position: absolute;
+    top: 270px;
+    left: 47px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+.plus img{
+    position: absolute;
+    top: 220px;
+    left: 189px;
+    background: #E5E5E5;
+    border-radius: 35px;
+    width: 50px;  
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    background-color: blue;
+    padding: 12px 150px;
+    position: absolute;
+    bottom: 50px;
+    left: 19px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.cancle a{
+    text-decoration: none;
+    color: blue;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 160px;
+}
