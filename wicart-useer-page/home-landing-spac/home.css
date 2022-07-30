@@ -486,6 +486,8 @@ header .header-desc .cta12  .reg{
     margin-top: 40px;
     position: relative;
     height: 50px;
+    position: relative;
+    z-index: 1000;
 }
 #filter-see{
     opacity: 1;
@@ -518,7 +520,7 @@ header .header-desc .cta12  .reg{
 }
 .brande-slide{
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 .brande-slide span{
     display: flex;
@@ -533,6 +535,26 @@ header .header-desc .cta12  .reg{
      display: flex;
      align-items: center;
      margin-top: 10px;
+     overflow-x: scroll;
+     height: 100px;
+}
+.brand-slide-show::-webkit-scrollbar{
+    height: 10px;
+
+}
+.brand-slide-show::-webkit-scrollbar-track{
+    background-color: transparent;
+    transition: 10s ease-in-out;
+    border-radius: 100px;
+
+}
+.brand-slide-show::-webkit-scrollbar-track:hover{
+    background-color: #a5a9e7;
+}
+.brand-slide-show::-webkit-scrollbar-thumb{
+    background-color: #1e06d3;
+    border-radius: 200px;
+
 }
 .brand-color,
 .brand-name{
