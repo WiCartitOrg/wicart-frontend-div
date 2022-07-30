@@ -228,9 +228,9 @@
           <section class="filter">
             <hr>
             <h3 id="filter">filter</h3>
-             <div class="filternotsee" id="filter-see">
+             <div  id="filter-see" style="display: none;">
             <div class="filters add see-filter">
-             <img src="images/remove.png" alt="" id="eras">
+             <img src="images/remove.png" alt="" id="eras" style="cursor:pointer ;">
              <div class="brande-slide">
                 <span>
                     <h2>brand</h2>
@@ -300,10 +300,14 @@
             </div>
             <hr>
             <script>
+                const eras=document.querySelector('#eras')
                 const filter=document.querySelector('#filter')
                 const filters=document.querySelector('#filter-see')
                 filter.addEventListener('click',()=>{
-                    filters.classList.toggle('see-filter')
+                    filters.style.display="block"
+                })
+                eras.addEventListener('click',()=>{
+                    filters.style.display="none"
                 })
             </script>
       </section>

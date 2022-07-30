@@ -489,9 +489,6 @@ header .header-desc .cta12  .reg{
     position: relative;
     z-index: 1000;
 }
-#filter-see{
-    opacity: 1;
-}
 .filter h3{
     margin-left: 50px;
     font-size: 20px;
@@ -499,10 +496,7 @@ header .header-desc .cta12  .reg{
     color: #7A7A7A;
     cursor: pointer;
 }
-.filternotsee{
-    display: block;
-    opacity: 0;
-}
+
 .filters{
     width: 430px;
     border-radius: 20px;
