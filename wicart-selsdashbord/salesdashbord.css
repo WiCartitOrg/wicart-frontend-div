@@ -14,10 +14,26 @@ button{
 body{
     min-width:1512px;
     display: flex;
+    flex-direction:row;
+    background-color: #f2f3ff;
+    justify-content: center;
+    /*
+        align-items: center;
+    height: 100vh;
+    */
+}
+/*
+.body-section{
+    min-width:1512px;
+    display: flex;
     flex-direction: row;
     background-color: #f2f3ff;
     justify-content: center;
+    position: relative;
+    height:985px ;
 }
+*/
+
 .navegation{
     position:sticky;
     width: 280px;
