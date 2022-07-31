@@ -42,6 +42,8 @@ nav{
    padding-bottom: 2%;
    width: 1134px;
    padding: 1.5% 0%;
+   position: relative;
+   z-index: 10000000000;
 }
 nav ul{
     display: flex;
@@ -101,8 +103,89 @@ nav ul li:hover{
     height: 26px;
 }
 
+.categories-cont{
+    width: 500px;
+    height: 180px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.categories-cont::-webkit-scrollbar{
+    width: 40px;
+}
+.categories-cont::-webkit-scrollbar-track{
+    background-color:transparent;
+    border-radius: 200px;
+    border: 18px solid #fcfcfd;
+}
+.categories-cont::-webkit-scrollbar-thumb{
+    background-color: #1e06d3;
+    border-radius: 1000px;
+    border: 19px solid #fcfcfd;
+}
+.cartgos{
+    position: absolute;
+    background-color:#fcfcfd;
+    z-index: 1;
+    top: 110px;
+    left:350px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 3s ease-in-out;
+    display: none;
+    animation: 2s cartgos ease-in-out;
+}
+@keyframes cartgos{
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+.li-cart:hover .cartgos{
+   transform: translateY(0%);
+   opacity: 1;
+   display: block;
+}
 
-
+.cartgos::before{
+   background-color:#fcfcfd;
+   z-index: 10;
+   content: "";
+   width: 50px;
+   height: 50px;
+   border-radius: 5px;
+   position: absolute;
+   transform: rotate(45deg);
+   top: -25px;
+   left: 70px;
+}
+.cart-rwo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 55px;
+    justify-content: space-between;
+}
+.cart-rwo label img{
+    width: 20px;
+    margin-right: 20px;
+}
+.cartgos .cart-rwo a label{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    cursor: pointer;
+}
+.cart-rwo a label span{
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #1e06d3;
+    font-weight: 500;
+}
 /* header-section*/
 header{
     display: flex;
@@ -301,7 +384,7 @@ header .header-desc .cta12  .reg{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 200px;
+    height: 300px;
     align-items: center;
     box-shadow: 0px 0px 10px 10px #f9f9f9;
     border-radius: 50px;
@@ -313,12 +396,12 @@ header .header-desc .cta12  .reg{
     cursor: pointer;
 }
 .slide .product{
-    width: 800px;
-    height: 170px;
-    overflow-x: hidden;
+    width:fit-content;
+    height: 220px;
+    overflow: hidden;
+    display: flex;
 }
 .product-slide{
-    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -327,22 +410,123 @@ header .header-desc .cta12  .reg{
 .top-slide{
     margin-left: 20px;
     margin-right: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: black;
 }
+.display-slide{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.display-slide span{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 9%;
+    width: 220px;
+    height: 220px;
+    background-color: rgba(129, 126, 126, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 18.5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #f9f9f9;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.display-slide:hover .span-dis{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.display-slide img{
+    width: 220px;
+    height: 220px;
+    padding: 0;
+    position: relative;
+    border-radius: 20px;
+    filter: brightness(.5);
+    filter: contrast(1.2);
+}
 /* design for the top sales section*/
+.top-sales-slide-show{
+    width: 100%;
+}
+.move-right{
+    animation: move_right 1s ease-in-out;
+    color: black;
+}
+@keyframes move_right{
+    0%{
+        transform: translateX(-20%);
+        color: black;
+    }
+    50%{
+        transform: translateX(20%);
+    }
+}
+.image{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    
+}
+.top-sale-img{
+    animation: top-sale-img 1s ease-in-out;
+    
+}
+.image img{
+    width: 400px;
+    height: 100%;
+}
+@keyframes top-sale-img{
+    0%{
+     width: 0px;
+     height: 0px;
+     position: absolute;
+    }
+    
+}
 .top-sales{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 50px 60px;
+    justify-content: space-between;
+    padding: 50px 80px;
     width: 100%;
     height: 525px;
     background: #E5E8FF;  
     box-shadow: 0px 131px 53px rgba(189, 189, 189, 0.01), 0px 74px 44px rgba(189, 189, 189, 0.03), 0px 33px 33px rgba(189, 189, 189, 0.04), 0px 8px 18px rgba(189, 189, 189, 0.05), 0px 0px 0px rgba(189, 189, 189, 0.05);
     border-radius: 17.222px;
+    position: relative;
 }
+.not{
+    display: none;
+}
+.doting{
+    display: flex;
+    justify-content: space-between;
+    width: 200PX;
+    position: relative;
+    bottom: 30px;
+    left: 450px;
+}
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color:transparent;
+    border-radius: 500px;
+    border: 3px solid #1e06d3;
+}
+.active-dot{
+    background-color: #1e06d3;
+}
+
 .top-sales .top-sales-wright{
+    overflow-x: hidden;
     width: 381px;
     height: 100%;
     display: flex;
@@ -789,8 +973,28 @@ header .header-desc .cta12  .reg{
 
 
 /* seller position*/
+  .profile-comp{
+    display: flex;
+    flex-direction: row;
+    width: 326.07px;
+    overflow-x: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-img img{
+    width: 326.07;
+    height: 300.21px;
+    opacity: 1;
+  }
 .seller-position{
     width: 100%;
+}
+.product-comp:hover +.profile-img img{
+    opacity: 0;
+}
+.profile-comp:hover .profile{
+    transform: translateX(0%);
 }
 .seller-position .profile{
     cursor: pointer;
@@ -802,17 +1006,19 @@ header .header-desc .cta12  .reg{
     width: 326.07px;
     height: 310.21px;
     background: #FFFFFF;
-    box-shadow: 0PX 0PX 10PX 10PX #f9f9f9;
     border-radius: 10PX;
+    position: absolute;
+    transform: translateX(-110%);
+    z-index: 1000;
+    transition: 1s ease-in-out;
 }
-.seller-position .profile h1{
-    width: 88px;
+.seller-position .profile-comp .profile h1{
     font-weight: 600;
     font-size: 16px;
     line-height: 136.5%;
     color: #000000;
 }
-.seller-position .profile h2{
+.seller-position .profile-comp .profile h2{
     width: 249.4px;
     font-weight: 400;
     font-size: 14px;
@@ -820,8 +1026,7 @@ header .header-desc .cta12  .reg{
     text-align: center;
     color: #A3A3A3;
 }
-.seller-position .profile p{
-    width: 93px;
+.seller-position .profile-comp .profile p{
     font-weight: 500;
     font-size: 16px;
     line-height: 136.5%;
