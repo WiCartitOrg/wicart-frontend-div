@@ -117,7 +117,7 @@ nav ul li:hover{
     opacity: 0;
 }
 .filters{
-    width: 430px;
+    width: 550px;
     border-radius: 20px;
     min-height: 300px;
     display: flex;
@@ -235,6 +235,105 @@ nav ul li:hover{
 .brand-color:nth-child(7)::before{
     background-color: gray;
 }
+
+
+/* range slide*/
+.rang{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+    position: relative;
+}
+.container-rang{
+    width: 90%;
+    margin-top: 30px;
+    position: relative;
+    height: 100px;
+}
+.container-rang input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance:none ;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+.container-rang .slider{
+  width: 100%;
+  height: 7px;
+  background-color:  #e0e5f2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 20px;
+  margin: auto;
+}
+.container-rang input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    height: 7px;
+
+}
+.container-rang input[type="range"]::-moz-range-track{
+    -moz-appearance: none;
+    height: 7px;
+}
+.container-rang input[type="range"]::-ms-track{
+    appearance: none;
+    height: 7px;
+}
+.container-rang input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #1e06d3;
+    border-radius: 500px;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-top: -3px;
+}
+.container-rang input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #1e06d3;
+    border-radius: 500px;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-top: -3px;   
+}
+.container-rang input[type="range"]::-ms-thumb{
+   appearance: none;
+   height: 15px;
+   width: 15px;
+   background-color: #1e06d3;
+   border-radius: 500px;
+   cursor: pointer;
+   pointer-events: auto;
+   margin-top: -3px; 
+}
+.container-rang input[type="range"]:active::-webkit-slider-thumb{
+    background-color: transparent;
+    border: 4px solid #1e06d3;
+}
+
+.valu{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-size: 21px;
+    font-weight: 500;
+}
+.valu .valus span{
+    font-size: 21px;
+    font-weight: 500;
+}
+
 
 .customer-rev{
     width: 100%;
