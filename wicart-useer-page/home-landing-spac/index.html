@@ -306,10 +306,10 @@
                 <div class="slider">
 
                 </div>
-                <input type="range" min="0" max="10000" value="000" id="slider-1"
+                <input type="range" min="0" max="50000" value="000" id="slider-1"
                 oninput="slidOne()"
                 >
-                <input type="range" min="0" max="10000" value="000" id="slider-2"
+                <input type="range" min="0" max="50000" value="000" id="slider-2"
                 oninput="slidTwo()"
                 >
 
@@ -325,7 +325,7 @@
           let sliderTwo =document.getElementById('slider-2')
           let displayOne =document.getElementById('range1')
           let displayTwo =document.getElementById('range2')
-          let minGap=0
+          let minGap=6000
           let slidertrack=document.querySelector('.slider')
           let slidermaxvalue=document.getElementById('slider-2').max
             function slidOne(){
