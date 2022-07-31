@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    cursor: context-menu;
+}
+button{
+    cursor: pointer;
+}
+body{
+    min-width:1512px;
+    display: flex;
+    flex-direction:row;
+    background-color: #f2f3ff;
+    justify-content: center;
+    /*
+        align-items: center;
+    height: 100vh;
+    */
+}
+/*
+.body-section{
+    min-width:1512px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f3ff;
+    justify-content: center;
+    position: relative;
+    height:985px ;
+}
+*/
+
+.navegation{
+    position:sticky;
+    width: 280px;
+    height: 983px;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: 100%;
+    height: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+.navegation nav{
+  width:232px;
+  height:368px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 46px;
+  margin-bottom: 104px;
+}
+.navegation .nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.navegation nav ul{
+    width:232px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 368px;
+}
+.nav ul li button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: left;
+    height: 48px;
+    align-items:center;
+    padding: 0px 30px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:16px ;
+    letter-spacing: -0.02em;
+    position: relative;
+}
+.nav li button img{
+    margin-right: 20px;
+    width: 20px;
+    height: 19.77px;
+}
+.nav li button:hover,
+.active{
+    background-color: #f2f3ff;
+    border-radius: 5px;
+}
+#no-message{
+    position: absolute;
+    height: 20px;
+    padding: 2px 2px;
+    padding-right: 4px;
+    right: 10px;
+    text-align: center;
+    background-color: #1c00ff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+.nav-des{
+    width: 189px;
+    background-color: #1c00ff;
+    position: relative;
+    border-radius: 20px;
+    height: 157.5px;
+    color: #ffffff;
+    padding: 55px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+.nav-des-logo{
+    width:78px ;
+    height: 78px;
+    background-color: black;
+    border-radius:50% ;
+    border: 7px solid #ffffff;
+    top: -50px;
+    left: 29%;
+    position: absolute;
+}
+.nav-des h2{
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+}
+.nav-des p{
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #e9edf7;
+}
+.cont{
+    position: relative;
+    width: 1230px;
+    min-height: 100vh;
+}
+.cont nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 2px;
+    align-items: center;
+    background-color: #ffffff;
+    height: 93px;
+}
+.cont nav ul{
+    display: flex;   
+}
+.cont nav ul button{
+  border: none;
+  width:81px ;
+  height: 60px;
+  background-color:#e9edf7 ;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 20px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+ .cont nav ul .btn-act{
+    width:83px ;
+    background-color: #1c00ff;
+    color: #ffffff;
+    font-weight: 600;
+}
+.cont nav ul button:nth-child(1){
+    border-radius: 5px 0px 0px 5px;
+}
+.cont nav ul button:nth-child(3){
+    border-radius: 0px 5px 5px 0px;
+}
+.search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 374px;
+    justify-content: space-between;
+    height: 60px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+.search input{
+    width: 214px;
+    height: 40.33px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f4f7fe;
+    border: none;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    font-weight: 400;
+    color: #8f9bba;
+    padding: 0PX 40PX;
+}
+.search input::placeholder{
+    color: #8f9bba;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    font-weight: 400;
+}
+.search-icon{
+    position: absolute;
+    left: 30px;
+}
+.search button{
+    border: none;
+    width: 65px;
+    height: 31px;
+    background-color: #E0E0E0;
+    border-radius: 20px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    outline: none;
+}
+.search button img{
+    position: relative;
+    z-index: 10;
+}
+.before{
+    content: "";
+    width: 32px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translateX(-7px);
+}
+.atare{
+    transform: translateX(20px);
+}
+.alarm{
+    margin-right: 30px;
+}
+.user{
+    width: 274px;
+    height: 60px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding: 0px 10px;
+}
+.user img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;   
+}
+.user span{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.maine-dash-board{
+    position: relative;
+    width: 100%;
+    height: 850px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+}
+.maine-dash-board::-webkit-scrollbar{
+   width: 8px;
+}
+.maine-dash-board::-webkit-scrollbar-track{
+    background-color:#ececec ;
+    border-radius: 50px;
+    margin-block:1px ;
+}
+.maine-dash-board::-webkit-scrollbar-thumb{
+   background-color: #1c00ff;
+   border: 1px solid #ececec;
+   border-radius: 50px;
+}
+@supports(scrollbar-color:#1c00ff #ececec){
+  *{
+    scrollbar-color:#1c00ff #ececec ;
+    scrollbar-width: thin;
+  }
+}

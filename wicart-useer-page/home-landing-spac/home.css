@@ -673,6 +673,14 @@ header .header-desc .cta12  .reg{
     position: relative;
     z-index: 1000;
 }
+.filter span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.filter span a b{
+  opacity: .5;
+}
 .filter h3{
     margin-left: 50px;
     font-size: 20px;
