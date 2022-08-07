@@ -1,110 +1,3 @@
-function allbuttonchangactive(){
-    var btn=document.getElementsByClassName('theme')[0]
-    var light=document.getElementById('befor')
-    btn.addEventListener('click',function(){
-     light.classList.toggle('atare')
-     console.log(light)
-    })
-    const list=document.querySelectorAll('.list')
-    function activelink(){
-        list.forEach((item) =>
-        item.classList.remove('active'));
-        this.classList.add('active');
-    }
-    list.forEach((item)=>
-    item.addEventListener('click',activelink)
-    )
-    const time=document.querySelectorAll('.time')
-    function activebtn(){
-        time.forEach((item) =>
-        item.classList.remove('btn-act'));
-        this.classList.add('btn-act');
-    }
-    time.forEach((item)=>
-    item.addEventListener('click',activebtn)
-    )
-}
-allbuttonchangactive()
-function navbutonview(){
-    //button call on
-const home=document.getElementById('home')
-const order=document.getElementById('order')
-const product=document.getElementById('product')
-const message=document.getElementById('message')
-const setting=document.getElementById('setting')
-const support=document.getElementById('support')
-console.log(home,order,product,message,setting,support)
-
-
-//section call on
-const homesec=document.getElementById('homemain')
-const ordersec=document.getElementById('ordermain')
-const productsec=document.getElementById('productmain')
-const messagesec=document.getElementById('messagemain')
-const settingsec=document.getElementById('settingmain')
-const supportsec=document.getElementById('supportmain')
-console.log(homesec,ordersec,productsec,messagesec,settingsec,supportsec)
-//button action
-home.addEventListener('click',function(){
-   homesec.style.display='block'
-   ordersec.style.display='none'
-   productsec.style.display='none'
-   messagesec.style.display='none'
-   settingsec.style.display='none'
-   supportsec.style.display='none'
-})
-
-order.addEventListener('click',function(){
- homesec.style.display='none'
-   ordersec.style.display='block'
-   productsec.style.display='none'
-   messagesec.style.display='none'
-   settingsec.style.display='none'
-   supportsec.style.display='none'
-})
-product.addEventListener('click',function(){
- homesec.style.display='none'
-   ordersec.style.display='none'
-   productsec.style.display='block'
-   messagesec.style.display='none'
-   settingsec.style.display='none'
-   supportsec.style.display='none'
-})
-message.addEventListener('click',function(){
- homesec.style.display='none'
-   ordersec.style.display='none'
-   productsec.style.display='none'
-   messagesec.style.display='block'
-   settingsec.style.display='none'
-   supportsec.style.display='none'
-})
-setting.addEventListener('click',function(){
- homesec.style.display='none'
-   ordersec.style.display='none'
-   productsec.style.display='none'
-   messagesec.style.display='none'
-   settingsec.style.display='block'
-   supportsec.style.display='none'
-})
-support.addEventListener('click',function(){
- homesec.style.display='none'
-   ordersec.style.display='none'
-   productsec.style.display='none'
-   messagesec.style.display='none'
-   settingsec.style.display='none'
-   supportsec.style.display='block'
-})
-order.addEventListener('click',function(){
- homesec.style.display='none'
-   ordersec.style.display='block'
-   productsec.style.display='none'
-   messagesec.style.display='none'
-   settingsec.style.display='none'
-   supportsec.style.display='none'
-})
-}
-navbutonview()
-function btnslidemove(){     
   const cont=document.querySelectorAll('.product-conts-slide');
   const nxtBtn = document.querySelectorAll('#move-right');
   const preBtn = document.querySelectorAll('#move-left');
@@ -121,7 +14,63 @@ function btnslidemove(){
       
   })
 
+  const time=document.querySelectorAll('.time')
+  function activebtn(){
+      time.forEach((item) =>
+      item.classList.remove('btn-act'));
+      this.classList.add('btn-act');
+  }
+  time.forEach((item)=>
+  item.addEventListener('click',activebtn)
+  )
 
+
+  const checked=document.querySelectorAll('.right-styles')
+
+const bodyElement=document.body;
+const currentTheme=localStorage.getItem('currentTheme')
+if(currentTheme){
+    bodyElement.classList.add('dark-them')
+    document.getElementById('befor').classList.add('atare')
 }
+function theme(){
+  var btn=document.getElementsByClassName('theme')[0]
+  var light=document.getElementById('befor')
+  btn.addEventListener('click',function(){
+   light.classList.toggle('atare')
+
+
+   document.body.classList.toggle('dark-them')
+   if(bodyElement.classList.contains('dark-them')){
+    localStorage.setItem('currentTheme', 'themeActive')
+    console.log(45)
+   }else{
+    localStorage.removeItem('currentTheme')
+   }
+  })
+}
+theme()
+
+
+let userditcont=  document.getElementById('user-dit')
+let user=document.getElementById('user')
+user.addEventListener('click',()=>{
+     userditcont.style.display='block'
+     user.style.display='none'
+     console.log('no')
+})        
+
+
+const usereout=document.getElementById('boder-down')
+usereout.addEventListener('click',()=>{
+  console.log("yes")
+       userditcont.style.display='none'
+       user.style.display='block'
+})       
+
+let calinda=document.getElementById('calinder')
+calinda.addEventListener('click',()=>{
+  document.getElementById('calinder-sheet').classList.toggle('calinder-show')
+})
+
  
-btnslidemove()

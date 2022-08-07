@@ -120,12 +120,81 @@
              <input type="text" placeholder="Search">
              <button><img src="png/search.png" alt=""></button>
          </div>
+         <div class="user-log" id="user-dit" style="display: none;">
+            <div class="user-dit" >
+                <div class="boder-dawn" >
+                  <img src="png/user.png" alt="" class="preferred-store-logo img">
+                  <span class="preferred-dit-store-name">
+                    <h1>Harry maguire</h1>
+                  </span>
+                  <img src="./png/open.png" alt="" class="rotate"
+                  id="boder-down">
+                </div>
+               <a href="/wicart-useer-page/history,favorite/index-profile.html">
+                <span class="dit-row">
+                    <img src="./png/profile-indicator.png" alt="">
+                    <p>
+                     My profile            
+                    </p>
+                   
+                 </span>
+               </a>
+               <a href="/wicart-useer-page/history,favorite/index-fav.html">
+                <span class="dit-row">
+                    <img src="./png/favorite.png" alt="">
+                    <p>
+                     favorite
+                    </p>
+                 </span>
+               </a>
+               <a href="/wicart-useer-page/history,favorite/index-history.html">
+                <span class="dit-row">
+                    <img src="./png/message.png" alt="">
+                    <p>
+                      History
+                 </p>
+                 </span>
+               </a>
+               <a href="#">
+                <span class="dit-row">
+                    <img src="./png/setting.png" alt="">
+                    <p>
+                     settings
+                    </p>
+                 </span>
+               </a>
+               <a href="#">
+                <span class="dit-row">
+                    <img src="./png/logou.png" alt="">
+                    <p>
+                     logout
+                    </p>
+                 </span>
+               </a>
+                
+              
+              </div>
+         </div>
+        
          <div class="nav-image">
-            <a href="#"> <img src="png/user.png" alt="" class="nav-img"></a>
+            <a href="#"> <img src="png/user.png" alt="" class="nav-img" id="user-se"></a>
             <a href="/wicart-useer-page/cart/cart.html"> <img src="png/cart.png" alt="" class="nav-img-sec-child"></a>
             <a href="#"><img src="png/notification.png" alt="" class="nav-img"></a>
          </div>
-         
+         <script>
+            let userditcont=document.getElementById('user-dit')
+            let user=document.getElementById('user-se')
+            user.addEventListener('click',()=>{
+                userditcont.style.display='block'
+                console.log('no')
+            })        
+
+            let usereout=document.getElementById('boder-down')
+            
+            usereout.addEventListener('click',()=>{
+                userditcont.style.display='none'
+            })       
+         </script>
        </nav>
   <section class="conttent-head">
         <!---    home heder section -->
