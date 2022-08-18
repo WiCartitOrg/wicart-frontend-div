@@ -73,4 +73,12 @@ calinda.addEventListener('click',()=>{
   document.getElementById('calinder-sheet').classList.toggle('calinder-show')
 })
 
- 
+const person=document.querySelectorAll('.person')
+function personbtn(){
+    person.forEach((item) =>
+    item.classList.remove('message-active'));
+    this.classList.add('message-active');
+}
+person.forEach((item)=>
+item.addEventListener('click',personbtn)
+)

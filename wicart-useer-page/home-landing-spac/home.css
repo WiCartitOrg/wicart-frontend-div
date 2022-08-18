@@ -7,6 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 .conttent-head{
     align-items: center;
     width: 1134px;
@@ -93,7 +94,7 @@ nav ul li:hover{
     z-index: 100000;
     background-color: #ffffff;
     top: 120%;
-    right: 0;
+    right: 2%;
     box-shadow:2px 1px 10px 2px #969697 ;
     border-radius: 10px;
     animation: up .5s ease forwards;
@@ -270,25 +271,28 @@ background-color: black;
    transform: rotate(45deg);
    top: -25px;
    left: 70px;
+   z-index: -1;
 }
 .cart-rwo{
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 55px;
+    padding: 0% 2%;
     justify-content: space-between;
 }
 .cart-rwo label img{
-    width: 20px;
-    margin-right: 20px;
+    width: 15px;
+    height: auto;
 }
 .cartgos .cart-rwo a label{
-    width: 180px;
+    width: 150px;
     display: flex;
     align-items: center;
     justify-content: left;
     flex-direction: row;
     cursor: pointer;
+    gap: 10px;
 }
 .cart-rwo a label span{
     font-size: 19px;
@@ -305,7 +309,7 @@ header{
     align-items: center;
 }
 header .header-desc{
-    width:536px;
+    width:40%;
     display: flex;
     flex-direction: column;
 
@@ -324,13 +328,12 @@ header .header-desc p{
     margin-top: -20px;
 }
 header .header-desc .cta12{
-    margin-top: 70px;
-    height: 70px;
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 350px;
+    width: 90%;
 }
 header .header-desc .cta12 button{
     width: 157px;
@@ -338,10 +341,11 @@ header .header-desc .cta12 button{
     left: 1px;
     bottom: 92px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #1c00ff;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    font-size: 16px;
 }
 header .header-desc .cta12 button:hover{
     width: 165px;
@@ -350,7 +354,6 @@ header .header-desc .cta12 button:hover{
 header .header-desc .cta12 .exp{
     background: #1C00FF;
     font-weight: 500;
-    font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
     display: flex;
@@ -359,9 +362,7 @@ header .header-desc .cta12 .exp{
 }
 header .header-desc .cta12  .reg{
     background-color: #ffffff;
-    border: 1px solid #a3a3a3;
     font-weight: 500;
-    font-size: 16px;
     line-height: 24px;
     color: #1C00FF;
 }
@@ -381,11 +382,12 @@ header .header-desc .cta12  .reg{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 3%;
     flex-direction: row;
 }
 .scall-botm{
     bottom: 20px;
-    left: -10px;
+    left: -5%;
     z-index: 10;
     width: 272px;
     height: 78px;
@@ -394,8 +396,8 @@ header .header-desc .cta12  .reg{
     border-radius: 8.35366px;    
 }
 .scall-top{
-    top: 250px;
-    left: -100px;
+    top: 45%;
+    left: -20%;
     z-index: 10;
     width: 252px;
     height: 84px;
@@ -439,7 +441,7 @@ header .header-desc .cta12  .reg{
     background: #1C00FF;
     border-radius: 500px;
     position: absolute;
-    left: -50px;
+    left: -20%;
     box-shadow: 0px 20.0488px 25.061px rgba(162, 162, 162, 0.25);
 }
 
@@ -565,6 +567,9 @@ header .header-desc .cta12  .reg{
 /* design for the top sales section*/
 .top-sales-slide-show{
     width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 }
 .move-right{
     animation: move_right 1s ease-in-out;
@@ -579,6 +584,9 @@ header .header-desc .cta12  .reg{
         transform: translateX(20%);
     }
 }
+.top-sales{
+    width: 100%;
+}
 .image{
     position: relative;
     width: 40%;
@@ -590,7 +598,7 @@ header .header-desc .cta12  .reg{
     
 }
 .image img{
-    width: 400px;
+    width: 100%;
     height: 100%;
 }
 @keyframes top-sale-img{
@@ -622,7 +630,6 @@ header .header-desc .cta12  .reg{
     width: 200PX;
     position: relative;
     bottom: 30px;
-    left: 450px;
 }
 .dot{
     width: 20px;
@@ -695,34 +702,40 @@ header .header-desc .cta12  .reg{
     flex-direction: column;
     width: 100%;
 }
-
-.row{
-    margin-top: 50px;
+.dis-row{
+    flex-wrap: wrap;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height:520px;
+    gap: 1.5%;
+    padding: 0% 1.5%;
 }
-.row .display{
+.row{
+    margin-top: 50px;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display{
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 358px;
+    justify-content: space-evenly;
+    width: 355.6px;
     overflow: hidden;
     border-radius: 10px;
-    min-height: 500px;
 }
 .display:hover{
     transform: translateY(1%);
 }
 .display .img{
-    height: 300px;
-    width: 358px;
+    height: 270px;            
+    width: 100%;
 }
 .display-dic{
     width: 100%;
-    min-height: 242px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -775,16 +788,19 @@ header .header-desc .cta12  .reg{
 }
 /* filters section styling*/
 .filter{
-    width: 100%;
+    width: 90%;
     padding: 0px 0px;
     margin-top: 40px;
     position: relative;
     height: 50px;
     position: relative;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .filter span{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
@@ -792,7 +808,6 @@ header .header-desc .cta12  .reg{
   opacity: .5;
 }
 .filter h3{
-    margin-left: 50px;
     font-size: 20px;
     font-weight: 500;
     color: #7A7A7A;
@@ -835,7 +850,7 @@ header .header-desc .cta12  .reg{
      height: 100px;
 }
 .brand-slide-show::-webkit-scrollbar{
-    height: 10px;
+    height: 0px;
 
 }
 .brand-slide-show::-webkit-scrollbar-track{
@@ -1042,6 +1057,21 @@ header .header-desc .cta12  .reg{
     margin-bottom: 50px;
     margin-right:30px;
 }
+.bramd{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+.bramd a{
+    width: fit-content;
+    height: fit-content;
+}
+.bramd a img{
+    width: 150px;
+    height: 150px;
+    border-radius:10px;
+}
 /*  become a sales person */
 .sele-product{
     margin-top: 100px;
@@ -1058,7 +1088,7 @@ header .header-desc .cta12  .reg{
 .sele-product .sele-product-wright{
     display: flex;
     flex-direction: column;
-    width:503px ;
+    width:50%;
     height: 100%;
     justify-content: space-around;
 }
@@ -1207,7 +1237,7 @@ margin-top: 13px;
 .footer-down{
     display: flex;
     justify-content: space-between;
-    margin-left: 320px;
+    margin-left: 30%;
     margin-top: 30px;
 }
 .footer-down h1{
@@ -1232,7 +1262,7 @@ margin-top: 13px;
 }
 .subscribe input::placeholder{
 color: #a3a3a3;
-font-size: 14px;
+font-size: 100%;
 font-weight: 400;
 line-height: 16.94px;
 }
@@ -1254,4 +1284,1039 @@ line-height: 16.94px;
 }
 .app-down img{
     margin-left: 15px;
+}
+
+
+
+
+@media screen and (max-width :1100px ) {
+       .conttent-head{
+        width: 100%;
+       }
+       nav{
+        width: 100%;
+        padding: 1.5% 5%;
+       }
+       nav ul{
+        width: 35%;
+       }
+       nav ul li{
+        font-size: 16px;
+       }
+       nav ul .nav-link-hover,
+       nav ul li:hover{
+        font-size: 18px;
+       }
+       .search input{
+        width: 180px;
+        height: 40px;
+        padding: 0% 25%;
+       }
+       .search input::placeholder{
+        font-size: 14px;
+        line-height: 20px;
+       }
+       nav  button img{
+        width: 13px;
+        height: 13px;
+       }
+       .nav-image img{
+        width: 23px;
+        height: 23px;
+       }
+
+
+       /* header section */
+        header{
+            width: 100%;
+            padding:0% 5% ;
+            height: 500px;
+        }
+        header .header-desc h1{
+            font-size: 42px;
+            line-height: 68px;
+        }
+        header .header-desc p{
+            font-size: 20px;
+            line-height: 26px;
+            margin-top: -35px;
+        }
+        .header-ill img {
+            width: 80%;
+            height: 80%;
+        }
+        .scall-botm{
+            width: 172px;
+            height: 55px;
+            left: 10%;
+        }
+        .scall-top{
+            width: 152px;
+            height: 55px;
+            left: 0%;
+        }
+        .scall-top span h1,
+        .scall-botm span h1{
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .scall-top span h2,
+        .scall-botm span h2{
+            font-size: 9.6951px;
+            line-height: 14px; 
+        }
+        .header-icon{
+            width: 65px;
+            height: 65px;
+            font-weight: 700;
+            font-size: 28.5138px;
+            position: absolute;
+            left: -35%;
+        }
+        .header-icon img{
+            width: 50%;
+            height: 50%;
+        }
+        .slide{
+            width: 95%;
+            height: 250px;
+        }
+        .slide .product{
+            width:fit-content;
+            height: 150px;
+        }
+        .display{
+            width: 320px;
+        }
+        .display-slide img{
+            width: 150px;
+            height: 150px;
+        }
+        .display-slide span{
+            width: 150px;
+            height: 150px;
+            font-size: 20px;
+            left: 10.5%;
+        }
+        .top-sales-slide-show{
+            width: 95%;
+        }
+        .heardeing{
+            font-size: 50px;
+        }
+        .row .display{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-left: 1%;
+            margin-right:1% ;
+        }
+        .sele-product{
+            width: 95%;
+        }
+        footer{
+            width: 100%;
+        }
+        .footer-down{
+            margin-left: 7%;
+        }
+    }
+
+@media screen and (max-width :915px ) {
+       .conttent-head{
+        width: 100%;
+       }
+
+       nav{
+        width: 100%;
+        padding: 1.5% 4%;
+       }
+       nav ul{
+        width: 35%;
+       }
+       .categories-cont{
+        width: 350px;
+        padding: 10px;
+        height: 100px;
+       }
+       .categories-cont::-webkit-scrollbar{
+        width: 20px;
+       }
+       .categories-cont::-webkit-scrollbar-track{
+        background-color:transparent;
+        border-radius: 200px;
+        border: 10px solid #fcfcfd;
+        }
+        .categories-cont::-webkit-scrollbar-thumb{
+            background-color: #1e06d3;
+            border-radius: 1000px;
+            border: 9px solid #fcfcfd;
+        }
+
+        .cartgos{
+            top: 100px;
+            left:25%;
+            padding: 0;
+        }
+        .cartgos::before{
+            width: 30px;
+            width: 30px;
+            height: 30px;
+            top: -15px;
+        }
+        .cart-rwo{
+            height: 30px;
+        }
+        .cart-rwo label img{
+            width: 10px;
+            height: auto;
+            margin-right: 0px;
+        }
+        .cart-rwo a label span{
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .cartgos .cart-rwo a label{
+            width: 100px;
+        }
+       .logo img{
+        width: 55px;
+        height: 40px;
+       }
+       nav ul li{
+        font-size: 12px;
+       }
+       nav ul .nav-link-hover,
+       nav ul li:hover{
+        font-size: 13px;
+       }
+       nav ul img{
+        width: 10px;
+        height: 7px;
+       }
+       .search input{
+        width: 120px;
+        height: 30px;
+        padding: 0% 25%;
+       }
+       .search input::placeholder{
+        font-size: 12px;
+        line-height: 20px;
+       }
+       nav  button img{
+        width: 10px;
+        height: 10px;
+       }
+       .nav-image img{
+        width: 16px;
+        height: 16px;
+       }
+
+
+       /* header section */
+        header{
+            width: 100%;
+            padding:0% 5% ;
+            height: 300px;
+        }
+        header .header-desc{
+            width: 45%;
+        }
+        header .header-desc h1{
+            font-size: 35px;
+            line-height: 48px;
+        }
+        header .header-desc p{
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: -35px;
+        }
+        header .header-desc .cta12 button{
+            width: 100px;
+            height: 40px;
+            font-size: 12px;
+        }
+        header .header-desc .cta12 button:hover{
+            width: 105px;
+            height:45px;
+        }
+        header .header-desc .cta12 .exp img{
+            width: 20px;
+            height: 20px;
+        }
+        .header-ill img {
+            width: 70%;
+            height: 80%;
+        }
+        .scall-botm{
+            width: 152px;
+            height: 50px;
+            left: 20%;
+        }
+        .scall-top{
+            width: 152px;
+            height: 50px;
+            left: 10%;
+        }
+        .scall-top span h1,
+        .scall-botm span h1{
+            font-size: 1px;
+            line-height: 15px;
+        }
+        .scall-top span h2,
+        .scall-botm span h2{
+            font-size: 0.6951px;
+            line-height: 10px; 
+        }
+        .header-icon{
+            width: 55px;
+            height: 55px;
+            font-weight: 700;
+            font-size: 18.5138px;
+            position: absolute;
+            left: -30%;
+        }
+        .header-icon img{
+            width: 50%;
+            height: 50%;
+        }
+       .structure{
+        width: 90%;
+        height: 90px;
+        border-radius: 20px;
+       }
+       .structure-cont{
+        gap: 14px;
+        width: 200px;
+        height: 58px;    
+        }
+        .structure img{
+            width: 35.53px;
+            height: 35.53px;
+        }
+        
+        .structure-cont-wright h1{
+            font-size: 19px;
+            line-height: 16px;
+        }
+        .structure-cont-wright h2{
+            font-size: 14px;
+            line-height: 16px;  
+        }
+            
+        .slide{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 90%;
+            height: 120px;
+            border-radius: 20px;
+        }
+        
+        .slide img{
+            cursor: pointer;
+            width: 70px;
+            height: 70px;
+        }
+        .slide .product{
+            width:fit-content;
+            height: 100px;
+        }
+        .display-slide img{
+            width: 90px;
+            height: 90px;
+        }
+        .top-slide{
+            margin: 0;
+        }
+        .display-slide span{
+            width: 90px;
+            height: 90px;
+            font-size: 20px;
+            left: 0%;
+        }
+        .heardeing{
+            font-size: 30px;
+            margin:0px 0;
+            height: 80px;
+        }
+        /* top sale section*/
+        .top-sales-slide-show{
+            width: 95%;
+        }
+        
+        
+        .image{
+            position: relative;
+            width: 40%;
+            height: 100%;
+            
+        }
+        .top-sale-img{
+            animation: top-sale-img 1s ease-in-out;
+            
+        }
+        .image img{
+            width: 100%;
+            height: 100%;
+        }
+        .top-sales{
+            padding: 20px 30px;
+            width: 100%;
+            height: 325px;
+        }
+        .top-sales .top-sales-wright{
+            width: 50%;
+        }
+        .top-sales .top-sales-wright h1{
+            font-size: 26px;
+            line-height: 34px;
+        }
+        .top-sales .top-sales-wright span{
+            font-size: 12px; 
+        }
+        .top-sales .top-sales-wright h2{
+            font-size: 38px;      
+        }
+        .top-sales .top-sales-wright button{
+            width: 257px;
+            height: 42px;
+            font-size: 12px; 
+        }
+        .doting{
+            width: 100PX;
+            bottom: 17px;
+        }
+        .dot{
+            width: 13px;
+            height: 13px;
+            border: 2px solid #1e06d3;
+        }
+       
+        .display{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 268px;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-left: 1%;
+            margin-right:1% ;
+        }
+        .display-dic{
+            width: 100%;
+            padding: 10px;
+        }
+        
+        .display-dic span h2{
+            font-size: 20px;
+            font-weight: 400px;
+        }
+        .display .img{
+            height: 240px;
+        }
+       .display-dic img{
+        width: 20px;
+        height: auto;
+       }
+        .display-dic h1{
+            margin-top: 5px;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .buy-now,
+        .add-to-cart{
+            height: 40px;
+            font-size: 12px;
+        }
+        @keyframes add{
+            100%{
+                transform: translateX(-115%);
+            }
+        }
+        .filter{
+            width: 100%;
+        }
+        .bramd{
+            width: 90%;
+            display: flex;
+            gap: 3%;
+        }
+        .bramd a img{
+            width: 120px;
+            height: 120px;
+        }
+
+        /* be a sales person*/
+        .sele-product{
+            width: 95%;
+            left: -100%;
+            height: 400px;
+        }
+        .sele-product img{
+            width: 50%;
+            height: auto;
+        }
+        .sele-product .sele-product-wright h1{
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 35px;
+        }
+        .sele-product .sele-product-wright span{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .sele-product .sele-product-wright button{
+           width: 120px;
+           height: 42px;
+           font-size: 12px;
+        }
+
+        /*seller position*/
+
+        .profile-comp{
+            width: 226.07px
+          }
+          .profile-img img{
+            width: 226.07;
+            height: 200.21px;
+            opacity: 1;
+          }
+       
+        .seller-position .profile{
+           
+            padding: 10px;
+            width: 226.07px;
+            height: 210.21px;
+           
+        }
+        .seller-position .profile-comp .profile h1{
+           
+            font-size: 12px;
+            line-height: 100.5%;
+           
+        }
+        .seller-position .profile-comp .profile h2{
+            width: 149.4px;
+           
+            font-size: 10px;
+            line-height: 100.5%;
+          
+        }
+        .seller-position .profile-comp .profile p{
+           
+            font-size: 12px;
+            line-height: 100.5%;
+          
+        }
+        
+        /* footer section */
+
+        footer{
+            width: 100%;
+            height: 500px;
+        }
+        .footer-colum h3{
+            margin-bottom: 5px;
+            font-size: 16px;
+            line-height: 24.8px;
+        }
+        footer ul a{
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 5px;
+        }
+        footer ul a h1{
+        font-size: 16px;
+        line-height:26.8px ;
+        margin-top: 2px;
+        margin-bottom: 4px;
+        }
+        .footer-down{
+            margin-left: 5%;
+        }
+        .footer-down h1{
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .subscribe input{
+            width:400px ;
+            height: 42px;
+            font-size: 14px;
+            padding: 0px 10px;
+        }
+        .subscribe button{
+            height: 42px;
+            width: 86px;
+            font-size: 12px;
+        }
+        .app-down img{
+            margin-left: 8px;
+            margin-right: 10px;
+            width: 120px;
+            height: auto;
+        }
+    }
+@media screen and (max-width :900px ) {
+       .conttent-head{
+        width: 100%;
+       }
+
+       nav{
+        width: 100%;
+        padding: 1.5% 4%;
+       }
+       nav ul{
+        width: 35%;
+       }
+       .categories-cont{
+        width: 350px;
+        padding: 10px;
+        height: 100px;
+       }
+       .categories-cont::-webkit-scrollbar{
+        width: 20px;
+       }
+       .categories-cont::-webkit-scrollbar-track{
+        background-color:transparent;
+        border-radius: 200px;
+        border: 10px solid #fcfcfd;
+        }
+        .categories-cont::-webkit-scrollbar-thumb{
+            background-color: #1e06d3;
+            border-radius: 1000px;
+            border: 9px solid #fcfcfd;
+        }
+
+        .cartgos{
+            top: 100px;
+            left:25%;
+            padding: 0;
+        }
+        .cartgos::before{
+            width: 30px;
+            width: 30px;
+            height: 30px;
+            top: -15px;
+        }
+        .cart-rwo{
+            height: 30px;
+        }
+        .cart-rwo label img{
+            width: 10px;
+            height: auto;
+            margin-right: 0px;
+        }
+        .cart-rwo a label span{
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .cartgos .cart-rwo a label{
+            width: 100px;
+        }
+       .logo img{
+        width: 55px;
+        height: 40px;
+       }
+       nav ul li{
+        font-size: 12px;
+       }
+       nav ul .nav-link-hover,
+       nav ul li:hover{
+        font-size: 13px;
+       }
+       nav ul img{
+        width: 10px;
+        height: 7px;
+       }
+       .search input{
+        width: 120px;
+        height: 30px;
+        padding: 0% 25%;
+       }
+       .search input::placeholder{
+        font-size: 12px;
+        line-height: 20px;
+       }
+       nav  button img{
+        width: 10px;
+        height: 10px;
+       }
+       .nav-image img{
+        width: 16px;
+        height: 16px;
+       }
+
+
+       /* header section */
+        header{
+            width: 100%;
+            padding:0% 5% ;
+            height: 300px;
+        }
+        header .header-desc{
+            width: 45%;
+        }
+        header .header-desc h1{
+            font-size: 35px;
+            line-height: 48px;
+        }
+        header .header-desc p{
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: -35px;
+        }
+        header .header-desc .cta12 button{
+            width: 100px;
+            height: 40px;
+            font-size: 12px;
+        }
+        header .header-desc .cta12 button:hover{
+            width: 105px;
+            height:45px;
+        }
+        header .header-desc .cta12 .exp img{
+            width: 20px;
+            height: 20px;
+        }
+        .header-ill img {
+            width: 70%;
+            height: 80%;
+        }
+        .scall-botm{
+            width: 152px;
+            height: 50px;
+            left: 20%;
+        }
+        .scall-top{
+            width: 152px;
+            height: 50px;
+            left: 10%;
+        }
+        .scall-top span h1,
+        .scall-botm span h1{
+            font-size: 1px;
+            line-height: 15px;
+        }
+        .scall-top span h2,
+        .scall-botm span h2{
+            font-size: 0.6951px;
+            line-height: 10px; 
+        }
+        .header-icon{
+            width: 55px;
+            height: 55px;
+            font-weight: 700;
+            font-size: 18.5138px;
+            position: absolute;
+            left: -30%;
+        }
+        .header-icon img{
+            width: 50%;
+            height: 50%;
+        }
+       .structure{
+        width: 90%;
+        height: 90px;
+        border-radius: 20px;
+       }
+       .structure-cont{
+        gap: 14px;
+        width: 200px;
+        height: 58px;    
+        }
+        .structure img{
+            width: 35.53px;
+            height: 35.53px;
+        }
+        
+        .structure-cont-wright h1{
+            font-size: 19px;
+            line-height: 16px;
+        }
+        .structure-cont-wright h2{
+            font-size: 14px;
+            line-height: 16px;  
+        }
+            
+        .slide{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 90%;
+            height: 120px;
+            border-radius: 20px;
+        }
+        
+        .slide img{
+            cursor: pointer;
+            width: 70px;
+            height: 70px;
+        }
+        .slide .product{
+            width:fit-content;
+            height: 100px;
+        }
+        .display-slide img{
+            width: 90px;
+            height: 90px;
+        }
+        .top-slide{
+            margin: 0;
+        }
+        .display-slide span{
+            width: 90px;
+            height: 90px;
+            font-size: 20px;
+            left: 0%;
+        }
+        .heardeing{
+            font-size: 30px;
+            margin:0px 0;
+            height: 80px;
+        }
+        /* top sale section*/
+        .top-sales-slide-show{
+            width: 95%;
+        }
+        
+        
+        .image{
+            position: relative;
+            width: 40%;
+            height: 100%;
+            
+        }
+        .top-sale-img{
+            animation: top-sale-img 1s ease-in-out;
+            
+        }
+        .image img{
+            width: 100%;
+            height: 100%;
+        }
+        .top-sales{
+            padding: 20px 30px;
+            width: 100%;
+            height: 325px;
+        }
+        .top-sales .top-sales-wright{
+            width: 50%;
+        }
+        .top-sales .top-sales-wright h1{
+            font-size: 26px;
+            line-height: 34px;
+        }
+        .top-sales .top-sales-wright span{
+            font-size: 12px; 
+        }
+        .top-sales .top-sales-wright h2{
+            font-size: 38px;      
+        }
+        .top-sales .top-sales-wright button{
+            width: 257px;
+            height: 42px;
+            font-size: 12px; 
+        }
+        .doting{
+            width: 100PX;
+            bottom: 17px;
+        }
+        .dot{
+            width: 13px;
+            height: 13px;
+            border: 2px solid #1e06d3;
+        }
+       
+        .display{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 225px;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-left: 1%;
+            margin-right:1% ;
+        }
+        .display-dic{
+            width: 100%;
+            padding: 10px;
+        }
+        
+        .display-dic span h2{
+            font-size: 20px;
+            font-weight: 400px;
+        }
+        .display .img{
+            height: 240px;
+        }
+       .display-dic img{
+        width: 20px;
+        height: auto;
+       }
+        .display-dic h1{
+            margin-top: 5px;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .buy-now,
+        .add-to-cart{
+            height: 40px;
+            font-size: 12px;
+        }
+        @keyframes add{
+            100%{
+                transform: translateX(-115%);
+            }
+        }
+        .filter{
+            width: 100%;
+        }
+        .bramd{
+            width: 90%;
+            display: flex;
+            gap: 3%;
+        }
+        .bramd a img{
+            width: 120px;
+            height: 120px;
+        }
+
+        /* be a sales person*/
+        .sele-product{
+            width: 95%;
+            left: -100%;
+            height: 400px;
+        }
+        .sele-product img{
+            width: 50%;
+            height: auto;
+        }
+        .sele-product .sele-product-wright h1{
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 35px;
+        }
+        .sele-product .sele-product-wright span{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .sele-product .sele-product-wright button{
+           width: 120px;
+           height: 42px;
+           font-size: 12px;
+        }
+
+        /*seller position*/
+
+        .profile-comp{
+            width: 226.07px
+          }
+          .profile-img img{
+            width: 226.07;
+            height: 200.21px;
+            opacity: 1;
+          }
+       
+        .seller-position .profile{
+           
+            padding: 10px;
+            width: 226.07px;
+            height: 210.21px;
+           
+        }
+        .seller-position .profile-comp .profile h1{
+           
+            font-size: 12px;
+            line-height: 100.5%;
+           
+        }
+        .seller-position .profile-comp .profile h2{
+            width: 149.4px;
+           
+            font-size: 10px;
+            line-height: 100.5%;
+          
+        }
+        .seller-position .profile-comp .profile p{
+           
+            font-size: 12px;
+            line-height: 100.5%;
+          
+        }
+        
+        /* footer section */
+
+        footer{
+            width: 100%;
+            height: 500px;
+        }
+        .footer-colum h3{
+            margin-bottom: 5px;
+            font-size: 16px;
+            line-height: 24.8px;
+        }
+        footer ul a{
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 5px;
+        }
+        footer ul a h1{
+        font-size: 16px;
+        line-height:26.8px ;
+        margin-top: 2px;
+        margin-bottom: 4px;
+        }
+        .footer-down{
+            margin-left: 5%;
+        }
+        .footer-down h1{
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .subscribe input{
+            width:400px ;
+            height: 42px;
+            font-size: 14px;
+            padding: 0px 10px;
+        }
+        .subscribe button{
+            height: 42px;
+            width: 86px;
+            font-size: 12px;
+        }
+        .app-down img{
+            margin-left: 8px;
+            margin-right: 10px;
+            width: 120px;
+            height: auto;
+        }
+    }
+@media screen and (max-width :720px) {
+    .dis-row{
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0%;
+        padding: 0% 0%;
+    }
+    .display{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 224px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-left: 1%;
+        margin-right:1% ;
+    }
+    .display .img{
+        height: 210px;
+    }
 }

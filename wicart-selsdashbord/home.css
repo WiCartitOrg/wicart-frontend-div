@@ -1587,9 +1587,6 @@ align-items: center;
     border-radius: 400px;
     border: 3px solid var(--content-background);
 }
-.person-on-massage::-webkit-scrollbar-thumb:hover{
-    background-color: var(--primary-font-color);
-}
 .person-on-massage .person{
     display: flex;
     align-items: flex-start;
@@ -1752,9 +1749,6 @@ align-items: center;
     background-color: var(--content-background);
     border-radius: 399px;
     border: 3px solid var(--content-background);
-}
-.message-content-in-words::-webkit-scrollbar-thumb:hover{
-    background-color: var(--primary-font-color);
 }
 .message-coming-in{
    display: flex;

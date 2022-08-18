@@ -16,92 +16,257 @@
         <ul>
            <a href="/wicart-useer-page/home-landing-spac/index.html"><li>Home</li></a>
            <a href="#"><li>Brands</li></a>
-           <a href="/wicart-useer-page/catigorys/catigores.html">Categories <img src="png/open.png" alt=""></a>
+           <li class="li-cart">Categories <img src="png/open.png" alt="">
+            <div class="cartgos">
+                <div class="categories-cont">
+                    <div class="cart-rwo">
+                     <a href="/wicart-useer-page/catigorys/catigores.html">
+                       <label for="" class="label">
+                           <img src="carte-img/phone-icon.png" alt="">
+                           <span>
+                               Phone
+                           </span>
+                       </label>
+                     </a>
+                     <a href="/wicart-useer-page/catigorys/catigores.html">
+                       <label for="">
+                           <img src="carte-img/phone-icon.png" alt="">
+                           <span>
+                               Phone
+                           </span>
+                       </label>
+                     </a>
+                    </div>
+                    <div class="cart-rwo">
+                     <a href="/wicart-useer-page/catigorys/catigores.html">
+                       <label for="">
+                           <img src="carte-img/computer-icon.png" alt="">
+                           <span>
+                             Computing
+                           </span>
+                       </label>
+                     </a>
+                     <a href="/wicart-useer-page/catigorys/catigores.html">
+                       <label for="">
+                           <img src="carte-img/supeing-icon.png" alt="">
+                           <span>
+                               supermarket
+                           </span>
+                       </label>
+                     </a>
+                    </div>
+                    <div class="cart-rwo">
+                     <a href="/wicart-useer-page/catigorys/catigores.html">
+                       <label for="">
+                           <img src="carte-img/gent.png" alt="">
+                           <span>
+                               gent
+                           </span>
+                       </label>
+                     </a>
+                     <a href="/wicart-useer-page/catigorys/catigores.html">
+                       <label for="">
+                           <img src="carte-img/phone-icon.png" alt="">
+                           <span>
+                               Phone
+                           </span>
+                       </label>
+                     </a>
+                    </div>
+                    <div class="cart-rwo">
+                     <a href="/wicart-useer-page/catigorys/catigores.html">
+                       <label for="">
+                           <img src="carte-img/education.png" alt="">
+                           <span>
+                               education
+                           </span>
+                       </label>
+                     </a>
+                     <a href="/wicart-useer-page/catigorys/catigores.html">
+                       <label for="">
+                           <img src="carte-img/game-icon.png" alt="">
+                           <span>
+                               Gaming
+                           </span>
+                       </label>
+                     </a>
+                    </div>
+                    <div class="cart-rwo">
+                     <a href="/wicart-useer-page/catigorys/catigores.html">
+                       <label for="">
+                           <img src="carte-img/ladeys.png" alt="">
+                           <span>
+                               lades
+                           </span>
+                       </label>
+                     </a>
+                     <a href="/wicart-useer-page/catigorys/catigores.html">
+                       <label for="">
+                           <img src="carte-img/sport.png" alt="">
+                           <span>
+                               sports
+                           </span>
+                       </label>
+                     </a>
+                    </div>
+                  </div>
+            </div>
+             
+        </li>
            <a href="#"><li>About</li></a>
         </ul>
          <div class="search">
              <input type="text" placeholder="Search">
              <button><img src="png/search.png" alt=""></button>
          </div>
+         <div class="user-log" id="user-dit" style="display: none;">
+            <div class="user-dit" >
+                <div class="boder-dawn" >
+                  <img src="png/user.png" alt="" class="preferred-store-logo img">
+                  <span class="preferred-dit-store-name">
+                    <h1>Harry maguire</h1>
+                  </span>
+                  <img src="./png/open.png" alt="" class="rotate"
+                  id="boder-down">
+                </div>
+               <a href="/wicart-useer-page/history,favorite/index-profile.html">
+                <span class="dit-ro">
+                    <img src="./png/profile-indicator.png" alt="">
+                    <p>
+                     My profile            
+                    </p>
+                   
+                 </span>
+               </a>
+               <a href="/wicart-useer-page/history,favorite/index-fav.html">
+                <span class="dit-ro">
+                    <img src="./png/favorite.png" alt="">
+                    <p>
+                     favorite
+                    </p>
+                 </span>
+               </a>
+               <a href="/wicart-useer-page/history,favorite/index-history.html">
+                <span class="dit-ro">
+                    <img src="./png/message.png" alt="">
+                    <p>
+                      History
+                 </p>
+                 </span>
+               </a>
+               <a href="#">
+                <span class="dit-ro">
+                    <img src="./png/setting.png" alt="">
+                    <p>
+                     settings
+                    </p>
+                 </span>
+               </a>
+               <a href="#">
+                <span class="dit-ro">
+                    <img src="./png/logou.png" alt="">
+                    <p>
+                     logout
+                    </p>
+                 </span>
+               </a>
+                
+              
+              </div>
+         </div>
+        
          <div class="nav-image">
-            <a href="#"> <img src="png/user.png" alt="" class="nav-img"></a>
+            <a href="#"> <img src="png/user.png" alt="" class="nav-img" id="user-se"></a>
             <a href="/wicart-useer-page/cart/cart.html"> <img src="png/cart.png" alt="" class="nav-img-sec-child"></a>
             <a href="#"><img src="png/notification.png" alt="" class="nav-img"></a>
          </div>
+         <script>
+            let userditcont=document.getElementById('user-dit')
+            let user=document.getElementById('user-se')
+            user.addEventListener('click',()=>{
+                userditcont.style.display='block'
+                console.log('no')
+            })        
+
+            let usereout=document.getElementById('boder-down')
+            
+            usereout.addEventListener('click',()=>{
+                userditcont.style.display='none'
+            })       
+         </script>
          
        </nav>
     
         <section class="view">
-            <div class="section-1">
+            <section section class="section-1">
                 <div class="sub-1">
                     <img src="images/nike-shoe.jpg" class="img-1" alt="" height="100%">
     
                     <ul>
-                        <li> <img src="images/nike-shoe.jpg" class="img-2" alt="" height="100%"></li>
-                        <li> <img src="images/nike-shoe.jpg" alt="" class="img-3" height="100%"></li>
-                        <li> <img src="images/nike-shoe.jpg" alt="" class="img-4" height="100%"></li>
-                        <li> <img src="images/nike-shoe.jpg" alt=""  class="img-5" height="100%"></li>
+                        <li> <img src="images/nike-shoe.jpg" class="img" alt=""></li>
+                        <li> <img src="images/nike-shoe.jpg" alt="" class="img" ></li>
+                        <li> <img src="images/nike-shoe.jpg" alt="" class="img" ></li>
+                        <li> <img src="images/nike-shoe.jpg" alt=""  class="img" ></li>
                     </ul>
                 </div>
-            <div class="sub-2">
-                <div>
-                 <p class="prod-name">The Machina Coat</p>
-                 <p  class="prod-price">&#8358<span id="prod-price">6000</span></p>
-                 <p class="prod-rating">
-                     <i class="fa fa-star-o" aria-hidden="true"></i>
-                     <i class="fa fa-star-o" aria-hidden="true"></i>
-                     <i class="fa fa-star-o" aria-hidden="true"></i>
-                     <i class="fa fa-star-o" aria-hidden="true"></i>
-                     <i class="fa fa-star-o" aria-hidden="true"></i>
-                 </p>
-                </div>
- 
-                <div class="color">
-                 <p>Avalaible Colors</p>
-                 <p>
-                     <i class="fa fa-circle" aria-hidden="true"></i>
-                     <i class="fa fa-circle" aria-hidden="true"></i>
-                     <i class="fa fa-circle" aria-hidden="true"></i>
-                     <i class="fa fa-circle" aria-hidden="true"></i>
-                 </p>
-                </div>
- 
-                <div class="cart">
-                 <button class="bn">Buy Naw</button>
-                 <button class="adt">Add to cart</button>
-                </div>
- 
-                <div>
-                 <p class="try">QTY</p>
-                 <div class="counter">
-                     <p id="result" class="p">1</p>
-                     <p id="sum" class="add">+</p>
-                     <p id="sub" class="sub">-</p>
+                 <div class="prod-viwe-dit">
+                    <h1 class="prod-name">
+                        The machinaw coat
+                    </h1>
+                    <h2 class="prod-price">
+                        #6,000
+                    </h2>
+                    <span class="rateing">
+
+                    </span>
+                    <p>Available colors</p>
+                    <div class="calor">
+                        <div class="cal" id="cal-1"></div>
+                        <div class="cal" id="cal-2"></div>
+                        <div class="cal" id="cal-3"></div>
+                        <div class="cal" id="cal-4"></div>
+                        <div class="cal" id="cal-5"></div>
+                        <div class="cal" id="cal-6"></div>
+                    </div>
+                    <h3>QTY</h3>
+                    <div class="bot-con">
+                        <div class="counter">
+                            <p class="count-total"></p>
+                            <h6 id="add">+</h6>
+                            <h6 id="sub">-</h6>
+                        </div>
+                        <button class="min-buy-now">
+                            Buy now
+                        </button>
+                        <button class="min-add-to-cart">
+                            Add to cart
+                        </button>
+                       
+                    </div>
+                   <div class="discount">
+                    <h5>15%</h5>
+                    <p>off</p>
                    </div>
-                </div> 
+                   <div class="size">
+                    <button class="size-p">
+                        size <img src="" alt="">
+                    </button>
+                   </div>
+                   <div class="prod-dit">
+                       <hr>
+                       <h4>Can’t see what you want? describe it here</h4>
+                       <hr>
+                   </div>
+                </div>
+                
  
-                <div class="discount">
-                 <h2>15%</h2>off
-               </div>
-               
- 
-                <div class="play">
-                 <span>
-                     <p>Cant see what you want? describe it here</p>
-                     <p>+</p>
-                 </span>
-                 <hr/>
-               </div>
- 
- 
-             </div>
- 
-         </div>
+            </section>
           
 
          <!--- section 2 -->
     
          <div class="section-2">
+           
             <span>
                 <p>Describtion</p>
                 <p>+</p>
@@ -126,7 +291,7 @@
 
         <h5 style="color:black ;">Related product</h5>
 
-        <div class="row">
+        <div class="dis-row">
 
             <div class="display">
                 <a href="#"> <img src="images/top-1.png" alt="" class="img"> </a>
@@ -160,12 +325,7 @@
                 </div>
             </div>
         
-        </div>
-
-        
-
-
-        <div class="row">
+       
 
             <div class="display">
                 <a href="#"> <img src="images/top-6.png" alt="" class="img"> </a>
@@ -199,11 +359,7 @@
                 </div>
             </div>
         
-        </div>
-
-
-
-        <div class="row">
+       
 
             <div class="display">
                 <a href="#"> <img src="images/top-5.png" alt="" class="img"> </a>

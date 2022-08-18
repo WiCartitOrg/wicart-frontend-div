@@ -772,3 +772,790 @@ line-height: 16.94px;
 .app-down img{
     margin-left: 15px;
 }
+
+@media screen and (max-width :1050px ) {
+    .conttent-head{
+     width: 100%;
+    }
+    
+    .view{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+     width: 100vw;
+     padding: 1.5% 5%;
+    }
+    nav ul{
+     width: 35%;
+    }
+    nav ul li{
+     font-size: 16px;
+    }
+    nav ul .nav-link-hover,
+    nav ul li:hover{
+     font-size: 18px;
+    }
+    .search input{
+     width: 180px;
+     height: 40px;
+     padding: 0% 25%;
+     font-size: 12px;
+    }
+    .search input::placeholder{
+     font-size: 12px;
+     line-height: 20px;
+    }
+    nav  button img{
+     width: 13px;
+     height: 13px;
+    }
+    .nav-image img{
+     width: 23px;
+     height: 23px;
+    }
+    .filter{
+        width: 95%;
+        align-self: center;
+    }
+    h5{
+        width: 92%;
+        font-size: 12px;
+
+    }
+    .cart{
+        width: 630px;
+    }
+    .cart-row{
+        height: 100px;
+    }
+    .discription{
+        width: 200px;
+    }
+    .item-image{
+        width: 75px;
+        height: 75px;
+    }
+     .item-name{
+        font-size: 18px;
+     }
+     .item-price{
+        font-size: 16px;
+     }
+     .item-number{
+        width: 70px;
+     }
+     .item-number img{
+        width: 20px;
+        height: 20px;
+     }
+     .item-number input{
+        height: 25px;
+        font-size: 19px;
+     }
+    .item-quary img{
+        width: 19px;
+        height: 19px;
+    }
+    .item-quary button{
+        width: 80px;
+        height: 25px;
+        font-size: 12px;
+    }
+    .sum-totale{
+        width: 300px;
+    }
+    .sum-totale h1{
+        font-size: 19px;
+    }
+    .sum-totale .spam{
+        font-size: 14px;
+    }
+    .sum-totale h2{
+        font-size: 14px;
+    }
+    .sum-totale span{
+        font-size: 9px;
+    }
+    .proceed{
+        height: 36px;
+        font-size: 12px;
+    }
+    .cart-policies{
+        width: 90%;
+        margin-top: 40px;
+        height: 40px;
+    }
+    .cart-policies h3{
+        font-size: 18px;
+    }
+    .cart-policies img{
+        width: 18px;
+        height: 18px;
+    }
+    .related-products{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .related-products h1{
+        font-size: 30px;
+        margin-bottom: 90px;
+    }
+    .related-product h5{
+        font-size: 30px;
+        width: 100%;
+        height: 100px;i
+    }
+    /* header section */
+     
+     
+     .dis-row{
+        width: 100%;
+     }
+      .display{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         width: 300px;
+         overflow: hidden;
+         border-radius: 10px;
+         margin-left: 1%;
+         margin-right:1% ;
+     }
+     .sele-product{
+         width: 95%;
+     }
+     footer{
+         width: 100%;
+     }
+     .footer-down{
+         margin-left: 7%;
+     }
+    }
+@media screen and (max-width :915px ) {
+    .conttent-head{
+     width: 100%;
+    }
+
+    nav{
+     width: 100%;
+     padding: 1.5% 4%;
+    }
+    nav ul{
+     width: 35%;
+    }
+    .categories-cont{
+     width: 350px;
+     padding: 10px;
+     height: 100px;
+    }
+    .categories-cont::-webkit-scrollbar{
+     width: 20px;
+    }
+    .categories-cont::-webkit-scrollbar-track{
+     background-color:transparent;
+     border-radius: 200px;
+     border: 10px solid #fcfcfd;
+     }
+     .categories-cont::-webkit-scrollbar-thumb{
+         background-color: #1e06d3;
+         border-radius: 1000px;
+         border: 9px solid #fcfcfd;
+     }
+
+     .cartgos{
+         top: 100px;
+         left:25%;
+         padding: 0;
+     }
+     .cartgos::before{
+         width: 30px;
+         width: 30px;
+         height: 30px;
+         top: -15px;
+     }
+     .cart-rwo{
+         height: 30px;
+     }
+     .cart-rwo label img{
+         width: 10px;
+         height: auto;
+         margin-right: 0px;
+     }
+     .cart-rwo a label span{
+         font-size: 13px;
+         font-weight: 500;
+     }
+     .cartgos .cart-rwo a label{
+         width: 100px;
+     }
+    .logo img{
+     width: 55px;
+     height: 40px;
+    }
+    nav ul li{
+     font-size: 12px;
+    }
+    nav ul .nav-link-hover,
+    nav ul li:hover{
+     font-size: 13px;
+    }
+    nav ul img{
+     width: 10px;
+     height: 7px;
+    }
+    .search input{
+     width: 120px;
+     height: 30px;
+     padding: 0% 25%;
+    }
+    .search input::placeholder{
+     font-size: 12px;
+     line-height: 20px;
+    }
+    nav  button img{
+     width: 10px;
+     height: 10px;
+    }
+    .nav-image img{
+     width: 16px;
+     height: 16px;
+    }
+    h5{
+        width: 92%;
+        font-size: 12px;
+
+    }
+    .cart{
+        width: 600px;
+    }
+    .cart-row{
+        height: 90px;
+    }
+    .discription{
+        width: 190px;
+    }
+    .item-image{
+        width: 70px;
+        height: 70px;
+    }
+     .item-name{
+        font-size: 16px;
+     }
+     .item-price{
+        font-size: 12px;
+     }
+     .item-number{
+        width: 60px;
+     }
+     .item-number img{
+        width: 15px;
+        height: 15px;
+     }
+     .item-number input{
+        height: 20px;
+        font-size: 14px;
+     }
+    .item-quary img{
+        width: 14px;
+        height: 14px;
+    }
+    .item-quary button{
+        width: 70px;
+        height: 20px;
+        font-size:6%;
+    }
+    .sum-totale{
+        width: 250px;
+        padding: 10px 30px;
+    }
+    .sum-totale h1{
+        font-size: 16px;
+    }
+    .sum-totale .spam{
+        font-size: 12px;
+    }
+    .sum-totale h2{
+        font-size: 12px;
+    }
+    .sum-totale span{
+        font-size: 4px;
+    }
+    .proceed{
+        height: 27px;
+        font-size: 8px;
+    }
+    .cart-policies{
+        width: 90%;
+        margin-top: 20px;
+        height: 30px;
+    }
+    .cart-policies h3{
+        font-size: 14px;
+    }
+    .cart-policies img{
+        width: 14px;
+        height: 14px;
+    }
+    .related-products{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .related-products h1{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .related-product h5{
+        font-size: 25px;
+        width: 100%;
+        height: 70px;i
+    }
+
+    /* header section */
+     
+     .display{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         width: 268px;
+         overflow: hidden;
+         border-radius: 10px;
+         margin-left: 1%;
+         margin-right:1% ;
+     }
+     .display-dic{
+         width: 100%;
+         padding: 10px;
+     }
+     
+     .display-dic span h2{
+         font-size: 20px;
+         font-weight: 400px;
+     }
+     .display .img{
+         height: 240px;
+     }
+    .display-dic img{
+     width: 20px;
+     height: auto;
+    }
+     .display-dic h1{
+         margin-top: 5px;
+         font-size: 22px;
+         font-weight: 500;
+     }
+     .buy-now,
+     .add-to-cart{
+         height: 40px;
+         font-size: 12px;
+     }
+     @keyframes add{
+         100%{
+             transform: translateX(-115%);
+         }
+     }
+     
+     .bramd a img{
+         width: 120px;
+         height: 120px;
+     }
+
+     /* be a sales person*/
+
+     
+     /* footer section */
+
+     footer{
+         width: 100%;
+         height: 500px;
+     }
+     .footer-colum h3{
+         margin-bottom: 5px;
+         font-size: 16px;
+         line-height: 24.8px;
+     }
+     footer ul a{
+         font-size: 12px;
+         line-height: 15px;
+         margin-top: 5px;
+     }
+     footer ul a h1{
+     font-size: 16px;
+     line-height:26.8px ;
+     margin-top: 2px;
+     margin-bottom: 4px;
+     }
+     .footer-down{
+         margin-left: 5%;
+     }
+     .footer-down h1{
+         margin-bottom: 10px;
+         font-size: 16px;
+         line-height: 19px;
+     }
+     .subscribe input{
+         width:400px ;
+         height: 42px;
+         font-size: 14px;
+         padding: 0px 10px;
+     }
+     .subscribe button{
+         height: 42px;
+         width: 86px;
+         font-size: 12px;
+     }
+     .app-down img{
+         margin-left: 8px;
+         margin-right: 10px;
+         width: 120px;
+         height: auto;
+     }
+ }
+@media screen and (max-width :900px ) {
+    .conttent-head{
+     width: 100%;
+    }
+
+    nav{
+     width: 100%;
+     padding: 1.5% 4%;
+    }
+    nav ul{
+     width: 35%;
+    }
+    .categories-cont{
+     width: 350px;
+     padding: 10px;
+     height: 100px;
+    }
+    .categories-cont::-webkit-scrollbar{
+     width: 20px;
+    }
+    .categories-cont::-webkit-scrollbar-track{
+     background-color:transparent;
+     border-radius: 200px;
+     border: 10px solid #fcfcfd;
+     }
+     .categories-cont::-webkit-scrollbar-thumb{
+         background-color: #1e06d3;
+         border-radius: 1000px;
+         border: 9px solid #fcfcfd;
+     }
+
+     .cartgos{
+         top: 100px;
+         left:25%;
+         padding: 0;
+     }
+     .cartgos::before{
+         width: 30px;
+         width: 30px;
+         height: 30px;
+         top: -15px;
+     }
+     .cart-rwo{
+         height: 30px;
+     }
+     .cart-rwo label img{
+         width: 10px;
+         height: auto;
+         margin-right: 0px;
+     }
+     .cart-rwo a label span{
+         font-size: 13px;
+         font-weight: 500;
+     }
+     .cartgos .cart-rwo a label{
+         width: 100px;
+     }
+    .logo img{
+     width: 55px;
+     height: 40px;
+    }
+    nav ul li{
+     font-size: 12px;
+    }
+    nav ul .nav-link-hover,
+    nav ul li:hover{
+     font-size: 13px;
+    }
+    nav ul img{
+     width: 10px;
+     height: 7px;
+    }
+    .search input{
+     width: 120px;
+     height: 30px;
+     padding: 0% 25%;
+    }
+    .search input::placeholder{
+     font-size: 12px;
+     line-height: 20px;
+    }
+    nav  button img{
+     width: 10px;
+     height: 10px;
+    }
+    .nav-image img{
+     width: 16px;
+     height: 16px;
+    }
+
+
+    /* header section */
+
+    h5{
+        width: 92%;
+        font-size: 12px;
+
+    }
+    .cart{
+        width: 400px;
+    }
+    .cart-row{
+        height: 90px;
+    }
+    .discription{
+        width: 190px;
+    }
+    .item-image{
+        width: 60px;
+        height: 60px;
+    }
+     .item-name{
+        font-size: 12px;
+     }
+     .item-price{
+        font-size: 9px;
+     }
+     .item-number{
+        width: 50px;
+     }
+     .item-number img{
+        width: 10px;
+        height: 15px;
+     }
+     .item-number input{
+        height: 15px;
+        font-size: 12px;
+     }
+    .item-quary img{
+        width: 10px;
+        height: 10px;
+    }
+    .item-quary button{
+        width: 70px;
+        height: 20px;
+        font-size:3%;
+    }
+    .sum-totale{
+        width: 250px;
+        padding: 10px 30px;
+        height: 350px;
+    }
+    .sum-totale h1{
+        font-size: 16px;
+    }
+    .sum-totale .spam{
+        font-size: 12px;
+        padding-top: 10px;
+        height: 50px;
+    }
+    .sum-totale h2{
+        font-size: 12px;
+    }
+    .sum-totale span{
+        font-size: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        text-align: right;
+    }
+    .proceed{
+        height: 27px;
+        font-size: 8px;
+    }
+    .cart-policies{
+        width: 90%;
+        margin-top: 15px;
+        height: 20px;
+    }
+    .cart-policies h3{
+        font-size: 10px;
+    }
+    .cart-policies img{
+        width: 10px;
+        height: 10px;
+    }
+    .related-products{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .related-products h1{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .related-product h5{
+        font-size: 20px;
+        width: 100%;
+        height: 60px;i
+    }
+
+     .display{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         width: 225px;
+         overflow: hidden;
+         border-radius: 10px;
+         margin-left: 1%;
+         margin-right:1% ;
+     }
+     .display-dic{
+         width: 100%;
+         padding: 10px;
+     }
+     
+     .display-dic span h2{
+         font-size: 20px;
+         font-weight: 400px;
+     }
+     .display .img{
+         height: 240px;
+     }
+    .display-dic img{
+     width: 20px;
+     height: auto;
+    }
+     .display-dic h1{
+         margin-top: 5px;
+         font-size: 22px;
+         font-weight: 500;
+     }
+     .buy-now,
+     .add-to-cart{
+         height: 40px;
+         font-size: 12px;
+     }
+    
+     /* footer section */
+
+     footer{
+         width: 100%;
+         height: 500px;
+     }
+     .footer-colum h3{
+         margin-bottom: 5px;
+         font-size: 16px;
+         line-height: 24.8px;
+     }
+     footer ul a{
+         font-size: 12px;
+         line-height: 15px;
+         margin-top: 5px;
+     }
+     footer ul a h1{
+     font-size: 16px;
+     line-height:26.8px ;
+     margin-top: 2px;
+     margin-bottom: 4px;
+     }
+     .footer-down{
+         margin-left: 5%;
+     }
+     .footer-down h1{
+         margin-bottom: 10px;
+         font-size: 16px;
+         line-height: 19px;
+     }
+     .subscribe input{
+         width:400px ;
+         height: 42px;
+         font-size: 14px;
+         padding: 0px 10px;
+     }
+     .subscribe button{
+         height: 42px;
+         width: 86px;
+         font-size: 12px;
+     }
+     .app-down img{
+         margin-left: 8px;
+         margin-right: 10px;
+         width: 120px;
+         height: auto;
+     }
+ }
+@media screen and (max-width :720px) {
+    .section-1{
+        height: 420px;
+    }
+    .sub-1 .img-1{
+        height: 300px;
+    }
+    .sub-1 ul li img{
+        width: 55px;
+        height:60px;
+    }
+    .prod-viwe-dit h1{
+        font-size: 20px;
+    }
+    .prod-viwe-dit h2{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    .prod-viwe-dit h3{
+        font-size: 15px;
+        margin-top: 22%;
+    }
+    .bot-con button{
+        width: 150px;
+        height: 45px;
+        font-size: 12px;
+    }
+    .discount {
+        width: 60px;
+        height: 60px;
+    }
+    .size-p{
+        width: 120px;
+        font-size: 12px;
+        height: 35px;
+    }
+    .prod-dit h4{
+        font-size: 12px;
+    }
+    .section-2 span p{
+        font-size: 14px;
+    }
+    .intro p{
+        font-size: 12px;
+        margin-left: 3%;
+    }
+    .related-product h5{
+        font-size: 35px;
+        height: 100px;
+    }
+ .dis-row{
+     flex-wrap: wrap;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     gap: 0%;
+     padding: 0% 0%;
+ }
+ .display{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 224px;
+     overflow: hidden;
+     border-radius: 10px;
+     margin-left: 1%;
+     margin-right:1% ;
+ }
+ .display .img{
+     height: 210px;
+ }
+}
