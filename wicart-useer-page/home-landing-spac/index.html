@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./png/logo.png" type="image/x-icon">
+    <title>wicart home</title>
     <link rel="stylesheet" href="home.css">
     <script src="https://kit.fontawesome.com/9b7e33d259.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+<section class="pop-up-sec">
+   
+</section>
     <nav>
         <div class="logo">
             <img src="png/logo.png" alt="">
@@ -123,77 +126,76 @@
          <div class="user-log" id="user-dit" style="display: none;">
             <div class="user-dit" >
                 <div class="boder-dawn" >
-                  <img src="png/user.png" alt="" class="preferred-store-logo img">
+                  <img src="./images/profile 1.png" alt="" class="preferred-store-logo-img">
                   <span class="preferred-dit-store-name">
                     <h1>Harry maguire</h1>
                   </span>
                   <img src="./png/open.png" alt="" class="rotate"
                   id="boder-down">
                 </div>
-               <a href="/wicart-useer-page/history,favorite/index-profile.html">
-                <span class="dit-row">
+                 <ul>
+                    <a href="#"><li>
                     <img src="./png/profile-indicator.png" alt="">
-                    <p>
-                     My profile            
-                    </p>
-                   
-                 </span>
-               </a>
-               <a href="/wicart-useer-page/history,favorite/index-fav.html">
-                <span class="dit-row">
+                    my profile
+                    </li></a>
+                    <a href="#"><li>
                     <img src="./png/favorite.png" alt="">
-                    <p>
-                     favorite
-                    </p>
-                 </span>
-               </a>
-               <a href="/wicart-useer-page/history,favorite/index-history.html">
-                <span class="dit-row">
-                    <img src="./png/message.png" alt="">
-                    <p>
-                      History
-                 </p>
-                 </span>
-               </a>
-               <a href="#">
-                <span class="dit-row">
+                    favorite
+                    </li></a>
+                    <li onclick="liveChart()">
+                    <img src="./png/MESSAG.png" alt="">
+                    live chat
+                    </li>
+                    <a href="#"><li>
+                    <img src="./png/avata.png" alt="">
+                    avatar
+                    </li></a>
+                    <a href="#"><li>
+                    <img src="./png/history.png" alt="">
+                    history
+                    </li></a>
+                    <a href="#"><li>
                     <img src="./png/setting.png" alt="">
-                    <p>
-                     settings
-                    </p>
-                 </span>
-               </a>
-               <a href="#">
-                <span class="dit-row">
+                    settings
+                    </li></a>
+                    <a href="#"><li>
                     <img src="./png/logou.png" alt="">
-                    <p>
-                     logout
-                    </p>
-                 </span>
-               </a>
-                
-              
+                    logout
+                    </li></a>
+                 </ul>
               </div>
          </div>
-        
+         <div class="mes-alt">
+            <img src="./png/not bag.png" alt="" class="mes-no" onclick="notlivechat()">
+            <div class="info">
+                <img src="./png/mes.png" alt="">
+                <div class="info-dit">
+                    <h1>Need help?</h1>
+                    <p>Click me to start chatting with us, We are here to listen to you.</p>
+                </div>
+            </div>
+            <button class="mes-yes" onclick="livechat()">
+                We are online <img src="./png/chat.png " alt="" class="chat" >
+            </button>
+         </div>
+        <section class="mes-box">
+            <img src="./png/remove.png" alt="" class="remove" onclick="remove()">
+              <h1>We are here to here your wonderful words</h1>
+              <p>
+                Ask admin about what you are looking for, he will definitly give a solution.
+              </p>
+              <input type="text" name="name" placeholder="name">
+              <input type="email" name="email" placeholder="enter email address">
+              <textarea name="text" id="" placeholder="type your message here"></textarea>
+              <button class="send" onclick="done()">send</button>
+        </section>
          <div class="nav-image">
             <a href="#"> <img src="png/user.png" alt="" class="nav-img" id="user-se"></a>
             <a href="/wicart-useer-page/cart/cart.html"> <img src="png/cart.png" alt="" class="nav-img-sec-child"></a>
             <a href="#"><img src="png/notification.png" alt="" class="nav-img"></a>
          </div>
          <script>
-            let userditcont=document.getElementById('user-dit')
-            let user=document.getElementById('user-se')
-            user.addEventListener('click',()=>{
-                userditcont.style.display='block'
-                console.log('no')
-            })        
-
-            let usereout=document.getElementById('boder-down')
-            
-            usereout.addEventListener('click',()=>{
-                userditcont.style.display='none'
-            })       
+           
          </script>
        </nav>
   <section class="conttent-head">
@@ -929,7 +931,7 @@
          </section>
         </footer>
     </section>
-
+      <script src="home.js"></script>
     <script src="/wicart-useer-page/cart-event.js"></script>
 </body>
 </html>

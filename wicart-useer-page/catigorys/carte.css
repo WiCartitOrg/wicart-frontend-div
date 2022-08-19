@@ -326,8 +326,9 @@ background-color: black;
     padding-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
-    position: absolute;
+    position: absolute;5
     top: 50px;
+    left: 2%;
     background-color:#f9f9fa;
     box-shadow: 0px 0px 50px 1px #979ef6;
 }
@@ -352,7 +353,7 @@ background-color: black;
      height: 100px;
 }
 .brand-slide-show::-webkit-scrollbar{
-    height: 10px;
+    height: 7px;
 
 }
 .brand-slide-show::-webkit-scrollbar-track{
@@ -777,7 +778,13 @@ line-height: 16.94px;
     .conttent-head{
      width: 100%;
     }
-    
+    .intro{
+        width: 95%;
+        align-self: center;
+    }
+    .intro p{
+        font-size: 12px;
+    }
     .view{
         width: 100%;
         display: flex;
@@ -1151,8 +1158,8 @@ line-height: 16.94px;
          font-size: 12px;
      }
      @keyframes add{
-         100%{
-             transform: translateX(-115%);
+         0%{
+             transform: translateX(-100%);
          }
      }
      

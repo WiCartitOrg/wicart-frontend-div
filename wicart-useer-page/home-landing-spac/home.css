@@ -27,6 +27,9 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y:scroll;
 }
 .logo img{
     width: 69.49px;
@@ -34,6 +37,75 @@ body{
 }
 b{
     color: #1c00ff;
+}
+.pop-up-sec{
+    position:fixed;
+    left: 0;
+    pointer-events: none;
+    height: 100vh;
+    z-index: 1000;
+    padding: 5% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.mes-pop-up{
+     width: 600px;
+     height: 180px;
+     background-color: #1c00ff;
+     border-radius: 20px;
+     text-align: center;
+     padding: 6% 10%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+}
+.mes-pop-up h1{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+}
+.mes-pop-up p{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+.anim{
+    animation: pop-up 3s ease forwards;
+}
+@keyframes pop-up{
+0%{
+    transform: translateX(10%);
+}
+5%{
+    transform: translateX(-10%);
+}
+10%{
+    transform: translateX(0%);
+}
+15%{
+    transform: translateX(-10%);
+}
+20%{
+    transform: translateX(-10px);
+}
+80%{
+    transform: translateX(-10px);
+}
+85%{
+    transform: translateX(-10%);
+}
+90%{
+    transform: translateX(0%);
+}
+95%{
+    transform: translateX(-10%);
+}
+100%{
+    transform: translateX(0%);
+    transform: scale(0);
+}
 }
 /* nave styling*/
 nav{
@@ -44,7 +116,7 @@ nav{
    width: 1134px;
    padding: 1.5% 0%;
    position: relative;
-   z-index: 10000000000;
+   z-index: 1000;
 }
 nav ul{
     display: flex;
@@ -100,14 +172,17 @@ nav ul li:hover{
     animation: up .5s ease forwards;
 }
 .user-dit{
-    width: 270px;
-    height: 357px;
+    width: 274px;
+    height: 441px;
+    background: #FFFFFF;
+    box-shadow: 0px 20.0488px 25.061px rgba(162, 162, 162, 0.25);
+    border-radius: 5px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    border-radius: 20px;
+  
 
 }
 @keyframes up{
@@ -128,19 +203,19 @@ background-color: black;
 
 }
 .boder-dawn{
-    border: none;
     border-bottom: 1px solid #a3a3a3;
-    border-radius: 0;
     width: 100%;
-    align-items:center;
+    height: 15%;
+    align-items:flex-start;
     display: flex;
-    flex-direction:column;
-    padding-bottom: 10px;
+    flex-direction:row;
+    gap: 5%;
     position: relative;
 }
 .boder-dawn img:first-child{
    width: 40px;
    height: 40px;
+   
 }
 
 
@@ -151,6 +226,11 @@ background-color: black;
     cursor: pointer;
     position: absolute;
     right: 20px;
+}
+.preferred-store-logo-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 3000px;
 }
 .preferred-dit-store-name{
     display: flex;
@@ -163,41 +243,242 @@ background-color: black;
     font-size: 16px;
     /* identical to box height, or 125% */
     color: #000000;
-    margin-top: 4px;
     letter-spacing: -0.02em;
     
 }
-.user-dit a{
+.user-dit ul{
+    height: 85%;
+    width: 100%;
+    justify-content: space-around;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.user-dit a{
     width: 100%;
 }
-.dit-row{
+.user-dit ul li{
+    width: 100%;
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 20px; 
-    width: 80%;
-    cursor: pointer;
-}
-.dit-row img{
-    width: 16px;
-    height: 18px;
-    cursor: pointer;
-    margin-right: 10%;
-}
-.dit-row p{
+    gap: 10%;
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
     letter-spacing: -0.02em;
     color: #7A7A7A;
+    align-items: center;
+    text-transform: capitalize;
+    height: 40px;
+    padding: 0% 5%;
+    border-radius: 5px;
     cursor: pointer;
 }
-.dit-row:last-child{
-    margin-top: 40px;
+.user-dit ul li img{
+    width: 21px;
+    height: auto;
+}
+
+.user-dit ul a:last-child{
+    margin-top: 10%;
+}
+.user-dit ul li:hover,
+.user-dit ul a:hover{
+    background-color: #fcfcfd;
+}
+.user-dit ul li:hover,
+.user-dit ul a li:hover{
+    color: #7A7A7A;
+    font-size: 14px;
+}
+.mes-alt{
+    width: 324px;
+    height: 211px;
+    position: absolute;
+    background:#fff;
+    top:200%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0px 4px 100px rgba(27, 27, 27, 0.25);
+    transition: .5s ease-in-out;
+    transform: scale(0);
+    z-index: 1000;
+}
+.mes-no{
+    right: 0;
+    position: absolute;
+    top: -40%;
+}
+.mes-alt .info{
+    width: 100%;
+    height: 70%;
+    padding: 10% 0%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    float: row;
+   
+}
+.mes-alt-out{
+   transform: scale(1);
+}
+.info img{
+    width: 40px;
+    height: auto;
+}
+.info-dit{
+    width: 60%;
+}
+.info .info-dit h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+    /* identical to box height, or 83% */
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+ .info .info-dit p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    /* or 169% */
+    letter-spacing: -0.02em;
+    color: #000000
+ }
+ .mes-yes{
+    background-color: #1C00FF;
+    border: none;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: right;
+    padding: 0% 20%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    display: flex;
+    gap: 5%;
+ }
+ .mes-yes img{
+    width: 20%;
+    height: auto;
+ }
+.mes-box{
+    position: absolute;
+    width: 0;
+    height: 709px;
+    top:100%;
+    right: 0;
+    padding: 2% 0%;
+    padding-top: 5%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 100px rgba(29, 29, 29, 0.25);
+    border-radius: 10px;   
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    transform: translateX(160%);
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s ease-in-out;
+    overflow:hidden;
+}
+.mes-box-out{
+    padding: 2% 5%;
+    transform: translateX(0%);
+    opacity: 1;
+    pointer-events: visible;
+    width: 504px;
+}
+.remove{
+    position: absolute;
+    right: 4%;
+    cursor: pointer;
+    top: 2%;
+    width: 5%;
+    height:auto;
+}
+.mes-box h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.mes-box p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;    
+}
+.mes-box input{
+     height: 58px;
+     width: 100%;
+     border-radius: 5px;
+     border: 1px solid #C4C4C4;
+     padding: 0% 3%;
+     font-weight: 400;
+     font-size: 16.7637px;
+     line-height: 19px;
+     outline: none;
+}
+.mes-box input::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.7637px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #848989;
+}
+.mes-box textarea{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    padding: 3%;
+    outline: none;
+    font-weight: 400;
+    font-size: 16.7637px;
+    line-height: 19px;
+}
+.mes-box textarea::placeholder{
+    font-weight: 400;
+    font-size: 12.7637px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #A1A1A1;    
+}
+.mes-box button{
+    width: 100%;
+    background-color: #1C00FF;
+    height: 58px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 12.7637px;
+    line-height: 19px;   
+    color: #fff;
+    border: none;
 }
 .nav-image{
     width: 10%;
@@ -307,6 +588,7 @@ header{
     justify-content: space-between;
     height: 596px;
     align-items: center;
+    margin-top: 5%;
 }
 header .header-desc{
     width:40%;
@@ -828,6 +1110,7 @@ header .header-desc .cta12  .reg{
     top: 50px;
     background-color:#f9f9fa;
     box-shadow: 0px 0px 50px 1px #979ef6;
+    left:2%;
 }
 .brande-slide{
     width: 100%;
@@ -850,7 +1133,7 @@ header .header-desc .cta12  .reg{
      height: 100px;
 }
 .brand-slide-show::-webkit-scrollbar{
-    height: 0px;
+    height: 5px;
 
 }
 .brand-slide-show::-webkit-scrollbar-track{
@@ -1293,6 +1576,7 @@ line-height: 16.94px;
        .conttent-head{
         width: 100%;
        }
+      
        nav{
         width: 100%;
         padding: 1.5% 5%;
@@ -1325,7 +1609,30 @@ line-height: 16.94px;
         height: 23px;
        }
 
-
+       .mes-alt{
+        width: 250px;
+        height: 170px;
+       }
+       .info .info-dit h1{
+             font-size: 18px;
+       }
+       .info .info-dit p{
+              font-size: 12px;
+              line-height: 18px;
+       }
+       .mes-yes{
+              font-size: 15px;
+       }
+       .mes-pop-up{
+        width: 400px;
+        height: 100px;
+       }
+       .mes-pop-up h1{
+        font-size: 18px;
+       }
+       .mes-pop-up p{
+        font-size: 12px;
+       }
        /* header section */
         header{
             width: 100%;
@@ -1514,7 +1821,24 @@ line-height: 16.94px;
         width: 16px;
         height: 16px;
        }
-
+       .mes-box{
+        height: 500px;
+       }
+       .mes-box h1{
+         font-size: 15px;
+       }
+       .mes-box p{
+          font-size: 12px;
+       }
+       .mes-box input{
+         height: 13%;
+       }
+       .mes-box textarea{
+        height: 25%;
+       }
+       .mes-box-out{
+        width: 400px;
+       }
 
        /* header section */
         header{
@@ -1732,8 +2056,8 @@ line-height: 16.94px;
             font-size: 12px;
         }
         @keyframes add{
-            100%{
-                transform: translateX(-115%);
+            0%{
+                transform: translateX(-100%);
             }
         }
         .filter{
@@ -2168,8 +2492,8 @@ line-height: 16.94px;
             font-size: 12px;
         }
         @keyframes add{
-            100%{
-                transform: translateX(-115%);
+            0%{
+                transform: translateX(-100%);
             }
         }
         .filter{

@@ -255,10 +255,20 @@
                    <div class="prod-dit">
                        <hr>
                        <h4>Can’t see what you want? describe it here</h4>
+                       <img src="./png/Vector.png" alt="" class="see-dis" onclick="ditsee()">
+
                        <hr>
+                  <div class="see-ditals">
+                      <textarea name="" id="" placeholder="type your spec here..."></textarea>
+                  </div>
                    </div>
                 </div>
-                
+                <script>
+                    function ditsee(){
+                       document.getElementsByClassName('see-dis')[0].classList.toggle('dis-see')
+                        document.getElementsByClassName('see-ditals')[0].classList.toggle('dit-fin-see')
+                    }
+                </script>
  
             </section>
           
@@ -267,18 +277,127 @@
     
          <div class="section-2">
            
+            <span >
+                <p  onclick="desout()">Describtion</p>
+                <p class="plos"   onclick="desout()">+</p>
+            </span>
+            <div class="des-out"  onclick="desout()">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Aliquam varius amet, viverra phasellus amet leo in. 
+                 Nulla ridiculus turpis placerat mauris, sit massa tellus. 
+                 Sit aliquam eget arcu et velit purus mattis egestas.
+                  Aliquet magna in quam sit eu nullam. Massa amet a vitae, 
+                  massa nibh vestibulum amet pellentesque tortor. Mauris, 
+                  sit velit nunc et pharetra purus. Dolor at elit odio ultrices aliquet ut
+                . Aliquet aliquet pellentesque ipsum pellentesque enim.
+            </div>
+            <hr>
+            <script>
+               function desout(){
+                document.getElementsByClassName('des-out')[0].classList.toggle('out-dis')
+               }
+            </script>
             <span>
-                <p>Describtion</p>
-                <p>+</p>
+                <p onclick="custv()">Customer review</p>
+                <p onclick="custv()">+</p>
             </span>
             <hr>
-    
-            <span>
-                <p>Customer review</p>
-                <p>+</p>
-            </span>
-            <hr>
+            <section class="customer-rev">
+                 <section class="rat">
+                    <div class="vef">
+                        <h1>4/5</h1>
+                        <span></span>
+                        <h2>67</h2>
+                        <p>verified customers</p>
+                    </div>
+                    <div class="rat-ang">
+                        <ul>
+                            <li>
+                                <h1>5</h1>
+                                <img src="./png/gold-star.png" alt="">
+                                <h2 class="no-of-pes">
+                                    (12)
+                                </h2>
+                                <input type="range" max="100" min="0" value="12">
+                            </li>
+                            <li>
+                                <h1>4</h1>
+                                <img src="./png/gold-star.png" alt="">
+                                <h2 class="no-of-pes">
+                                    (42)
+                                </h2>
+                                <input type="range" max="100" min="0" value="42">
+                            </li>
+                            <li>
+                                <h1>3</h1>
+                                <img src="./png/gold-star.png" alt="">
+                                <h2 class="no-of-pes">
+                                    (62)
+                                </h2>
+                                <input type="range" max="100" min="0" value="62">
+                            </li>
+                            <li>
+                                <h1>2</h1>
+                                <img src="./png/gold-star.png" alt="">
+                                <h2 class="no-of-pes">
+                                    (20)
+                                </h2>
+                                <input type="range" max="100" min="0" value="20">
+                            </li>
+                            <li>
+                                <h1>1</h1>
+                                <img src="./png/gold-star.png" alt="">
+                                <h2 class="no-of-pes">
+                                    (8)
+                                </h2>
+                                <input type="range" max="100" min="0" value="8">
+                            </li>
+                        </ul>
+                    </div>
+                 </section>
+                 <section class="rev-dis-viwe">
+                    <div class="view-dit">
+                        <img src="./png/ven (1).png" alt="" class="rev-profile-img">
+                        <div class="rev-wright">
+                            <h1>Wittig lyon</h1>
+                            <span>8/3/2022</span>
+                            <h2>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius
+                                 amet, viverra phasellus
+                                 amet leo in. Ni volutpat consectetur ornare odio egestas elit. </h2>
+                        </div>
+                    </div>
+
+
+                    <div class="view-dit">
+                        <img src="./png/ven (2).png" alt="" class="rev-profile-img">
+                        <div class="rev-wright">
+                            <h1>Wittig lyon</h1>
+                            <span>8/3/2022</span>
+                            <h2>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius
+                                 amet, viverra phasellus
+                                 amet leo in. Ni volutpat consectetur ornare odio egestas elit. </h2>
+                        </div>
+                    </div>
+
+
+                    <div class="view-dit">
+                        <img src="./png/ven (3).png" alt="" class="rev-profile-img">
+                        <div class="rev-wright">
+                            <h1>Wittig lyon</h1>
+                            <span>8/3/2022</span>
+                            <h2>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius
+                                 amet, viverra phasellus
+                                 amet leo in. Ni volutpat consectetur ornare odio egestas elit. </h2>
+                        </div>
+                    </div>
+                 </section>
+            </section>
     </div>
+    <script>
+        function custv(){
+            document.getElementsByClassName('customer-rev')[0].classList.toggle('costomer-rev-show')
+        }
+    </script>
 
        <!---related product-->
 
